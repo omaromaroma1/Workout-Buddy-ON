@@ -1,9 +1,9 @@
-const CACHE_NAME = "workout-buddy-v21";
+const CACHE_NAME = "workout-buddy-v23";
 const APP_FILES = [
   "./",
   "./index.html",
-  "./styles.css?v=21",
-  "./app.js?v=21",
+  "./styles.css?v=23",
+  "./app.js?v=23",
   "./manifest.webmanifest",
   "./assets/logo.svg",
   "./assets/icon-192.png",

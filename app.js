@@ -670,8 +670,21 @@ function renderPlan() {
     `
     )
     .join("");
+  const planZoomMarkup = state.plan
+    .map(
+      (item) => `
+      <div class="plan-zoom-item">
+        <button class="plan-zoom-open" type="button" data-open-plan="${item.id}" aria-label="Open ${formatDisplayText(item.name)} full screen">
+          <strong>${formatDisplayText(item.name)}</strong>
+          <span>${item.group} | ${item.sets}</span>
+        </button>
+        <button class="remove-plan plan-zoom-remove" type="button" data-remove="${item.id}" aria-label="Remove ${formatDisplayText(item.name)}">x</button>
+      </div>
+    `
+    )
+    .join("");
   planList.innerHTML = planMarkup;
-  planZoomList.innerHTML = planMarkup;
+  planZoomList.innerHTML = planZoomMarkup;
 }
 
 function setPlanExpanded(expanded) {
