@@ -36,6 +36,14 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.plan-expanded-open {
+  overflow: hidden;
+}
+
+body.plan-expanded-open .app-shell {
+  display: none;
+}
+
 button,
 input {
   font: inherit;
@@ -328,16 +336,6 @@ h1 {
   background: rgba(56, 217, 169, 0.1);
 }
 
-.plan-panel.expanded {
-  position: static;
-  grid-column: 1 / -1;
-  max-height: none;
-}
-
-.plan-panel.expanded .plan-list {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
 .muscle-list {
   display: grid;
   gap: 8px;
@@ -579,6 +577,69 @@ h1 {
   padding: clamp(12px, 3vw, 30px);
   background: rgba(4, 8, 13, 0.78);
   backdrop-filter: blur(18px);
+}
+
+.plan-zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 18;
+  display: none;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+  background: #05080d;
+}
+
+.plan-zoom.open {
+  display: flex;
+}
+
+.plan-zoom-card {
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: clamp(22px, 5vw, 52px);
+  border: 0;
+  border-radius: 0;
+  background:
+    linear-gradient(150deg, rgba(56, 217, 169, 0.12), transparent 36%),
+    rgba(20, 27, 36, 0.98);
+}
+
+.plan-zoom-heading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 14px;
+  background: linear-gradient(180deg, rgba(20, 27, 36, 0.98), rgba(20, 27, 36, 0.84));
+}
+
+.plan-zoom-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1;
+}
+
+.plan-zoom-list {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.plan-zoom .plan-item {
+  min-height: 82px;
+  padding: 16px;
+}
+
+.plan-zoom .plan-open strong {
+  font-size: clamp(1rem, 2vw, 1.18rem);
+}
+
+.plan-zoom .plan-open span {
+  font-size: 0.9rem;
 }
 
 .plan-modal.open {
@@ -978,10 +1039,6 @@ h1 {
     max-height: none;
   }
 
-  .plan-panel.expanded {
-    max-height: none;
-  }
-
   .plan-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1022,8 +1079,21 @@ h1 {
     padding: 0;
   }
 
-  .plan-panel.expanded .plan-list {
+  .plan-zoom-list {
     grid-template-columns: 1fr;
+  }
+
+  .plan-zoom {
+    inset: 0;
+    padding: 0;
+  }
+
+  .plan-zoom-card {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    border-inline: 0;
   }
 
   .plan-modal-card {

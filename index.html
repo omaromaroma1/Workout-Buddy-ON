@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=11" />
+    <link rel="stylesheet" href="styles.css?v=21" />
   </head>
   <body>
     <div class="app-shell">
@@ -109,6 +109,19 @@
       </main>
     </div>
 
+    <div class="plan-zoom" id="planZoom" aria-hidden="true">
+      <div class="plan-zoom-card" role="dialog" aria-modal="true" aria-labelledby="planZoomTitle">
+        <div class="plan-zoom-heading">
+          <h2 id="planZoomTitle">My Plan</h2>
+          <div class="plan-heading-actions">
+            <span id="planZoomCount">0</span>
+            <button class="modal-close" id="planZoomCloseButton" type="button" aria-label="Close expanded My Plan">x</button>
+          </div>
+        </div>
+        <div class="plan-list plan-zoom-list" id="planZoomList"></div>
+      </div>
+    </div>
+
     <div class="plan-modal" id="planModal" aria-hidden="true">
       <div class="plan-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <button class="modal-close" id="modalCloseButton" type="button" aria-label="Close full screen workout view">x</button>
@@ -124,6 +137,6 @@
       </div>
     </div>
 
-    <script src="app.js?v=11" defer></script>
+    <script src="app.js?v=21" defer></script>
   </body>
 </html>

@@ -316,6 +316,10 @@ const searchInput = document.querySelector("#searchInput");
 const clearPlanButton = document.querySelector("#clearPlanButton");
 const expandPlanButton = document.querySelector("#expandPlanButton");
 const planPanel = document.querySelector(".plan-panel");
+const planZoom = document.querySelector("#planZoom");
+const planZoomList = document.querySelector("#planZoomList");
+const planZoomCount = document.querySelector("#planZoomCount");
+const planZoomCloseButton = document.querySelector("#planZoomCloseButton");
 const planModal = document.querySelector("#planModal");
 const modalCloseButton = document.querySelector("#modalCloseButton");
 const modalTitle = document.querySelector("#modalTitle");
@@ -645,13 +649,15 @@ function renderWorkouts() {
 
 function renderPlan() {
   planCount.textContent = state.plan.length;
+  planZoomCount.textContent = state.plan.length;
 
   if (!state.plan.length) {
     planList.innerHTML = `<p class="plan-empty">Your saved exercises will appear here.</p>`;
+    planZoomList.innerHTML = `<p class="plan-empty">Your saved exercises will appear here.</p>`;
     return;
   }
 
-  planList.innerHTML = state.plan
+  const planMarkup = state.plan
     .map(
       (item) => `
       <div class="plan-item">
@@ -664,13 +670,20 @@ function renderPlan() {
     `
     )
     .join("");
+  planList.innerHTML = planMarkup;
+  planZoomList.innerHTML = planMarkup;
 }
 
 function setPlanExpanded(expanded) {
   isPlanExpanded = expanded;
-  planPanel.classList.toggle("expanded", isPlanExpanded);
+  planZoom.classList.toggle("open", isPlanExpanded);
+  planZoom.setAttribute("aria-hidden", String(!isPlanExpanded));
+  document.body.classList.toggle("plan-expanded-open", isPlanExpanded);
   expandPlanButton.setAttribute("aria-expanded", String(isPlanExpanded));
   expandPlanButton.setAttribute("aria-label", isPlanExpanded ? "Collapse My Plan" : "Expand My Plan");
+  if (isPlanExpanded) {
+    planZoomCloseButton.focus();
+  }
 }
 
 function renderAll() {
@@ -787,7 +800,30 @@ planList.addEventListener("click", (event) => {
   }
 });
 
+planZoomList.addEventListener("click", (event) => {
+  const removeButton = event.target.closest("[data-remove]");
+  if (removeButton) {
+    state.plan = state.plan.filter((item) => item.id !== removeButton.dataset.remove);
+    savePlan();
+    renderWorkouts();
+    renderPlan();
+    return;
+  }
+
+  const openButton = event.target.closest("[data-open-plan]");
+  if (openButton) {
+    openPlanModal(openButton.dataset.openPlan);
+  }
+});
+
 modalCloseButton.addEventListener("click", closePlanModal);
+planZoomCloseButton.addEventListener("click", () => setPlanExpanded(false));
+
+planZoom.addEventListener("click", (event) => {
+  if (event.target === planZoom) {
+    setPlanExpanded(false);
+  }
+});
 
 planModal.addEventListener("click", (event) => {
   if (event.target === planModal) {
@@ -799,6 +835,10 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && planModal.classList.contains("open")) {
     closePlanModal();
   }
+
+  if (event.key === "Escape" && isPlanExpanded) {
+    setPlanExpanded(false);
+  }
 });
 
 clearPlanButton.addEventListener("click", () => {
@@ -807,6 +847,7 @@ clearPlanButton.addEventListener("click", () => {
   renderWorkouts();
   renderPlan();
   closePlanModal();
+  setPlanExpanded(false);
 });
 
 expandPlanButton.addEventListener("click", () => {
