@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Workout Buddy logo">
+  <rect width="512" height="512" rx="112" fill="#0d1117"/>
+  <circle cx="256" cy="256" r="178" fill="#38d9a9"/>
+  <path d="M145 272h54v-32h114v32h54v-88h-54v32H199v-32h-54v88Z" fill="#071414"/>
+  <path d="M154 342c34 35 70 52 102 52s68-17 102-52" fill="none" stroke="#071414" stroke-width="31" stroke-linecap="round"/>
+  <path d="M203 134c13-16 31-24 53-24s40 8 53 24" fill="none" stroke="#071414" stroke-width="28" stroke-linecap="round"/>
+</svg>

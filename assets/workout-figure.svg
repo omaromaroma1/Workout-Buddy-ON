@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 620" role="img" aria-label="Athlete lifting a dumbbell">
+  <defs>
+    <linearGradient id="skin" x1="0" x2="1">
+      <stop stop-color="#f6c453"/>
+      <stop offset="1" stop-color="#ff8f70"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#38d9a9"/>
+      <stop offset="1" stop-color="#45aaf2"/>
+    </linearGradient>
+  </defs>
+  <circle cx="310" cy="310" r="286" fill="#141b24"/>
+  <circle cx="310" cy="310" r="230" fill="#1b2532"/>
+  <path d="M104 426c72 66 146 99 222 99 75 0 140-30 195-90" fill="none" stroke="#38d9a9" stroke-width="34" stroke-linecap="round" opacity=".35"/>
+  <path d="M298 192c-44 4-79 33-93 77l-27 83c-5 16 3 33 19 38 15 5 31-3 36-18l22-69 57 40-36 119c-6 20 5 40 25 46 20 6 40-5 46-25l46-149c5-16-1-33-15-42l-80-52Z" fill="url(#mint)"/>
+  <circle cx="351" cy="143" r="45" fill="url(#skin)"/>
+  <path d="M395 255l70-64" fill="none" stroke="url(#skin)" stroke-width="31" stroke-linecap="round"/>
+  <path d="M456 204l36-34" fill="none" stroke="#f6c453" stroke-width="31" stroke-linecap="round"/>
+  <path d="M453 137l77 77" fill="none" stroke="#f7fafc" stroke-width="22" stroke-linecap="round"/>
+  <path d="M424 166l135 135" fill="none" stroke="#f7fafc" stroke-width="18" stroke-linecap="round" opacity=".95"/>
+  <path d="M381 344l76 87" fill="none" stroke="url(#skin)" stroke-width="35" stroke-linecap="round"/>
+  <path d="M232 353l-98 44" fill="none" stroke="url(#skin)" stroke-width="33" stroke-linecap="round"/>
+  <path d="M223 484h96" fill="none" stroke="#f7fafc" stroke-width="28" stroke-linecap="round"/>
+  <path d="M421 463h90" fill="none" stroke="#f7fafc" stroke-width="28" stroke-linecap="round"/>
+  <path d="M282 179c24-54 69-70 118-40" fill="none" stroke="#0d1117" stroke-width="20" stroke-linecap="round"/>
+</svg>
