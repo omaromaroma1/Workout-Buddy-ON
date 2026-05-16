@@ -314,6 +314,8 @@ const planList = document.querySelector("#planList");
 const planCount = document.querySelector("#planCount");
 const searchInput = document.querySelector("#searchInput");
 const clearPlanButton = document.querySelector("#clearPlanButton");
+const expandPlanButton = document.querySelector("#expandPlanButton");
+const planPanel = document.querySelector(".plan-panel");
 const planModal = document.querySelector("#planModal");
 const modalCloseButton = document.querySelector("#modalCloseButton");
 const modalTitle = document.querySelector("#modalTitle");
@@ -324,6 +326,7 @@ const modalDemo = document.querySelector("#modalDemo");
 const modalGuide = document.querySelector("#modalGuide");
 const demoCache = new Map();
 let activeDemoRequest = 0;
+let isPlanExpanded = false;
 
 function savePlan() {
   localStorage.setItem("workoutBuddyPlan", JSON.stringify(state.plan));
@@ -663,6 +666,13 @@ function renderPlan() {
     .join("");
 }
 
+function setPlanExpanded(expanded) {
+  isPlanExpanded = expanded;
+  planPanel.classList.toggle("expanded", isPlanExpanded);
+  expandPlanButton.setAttribute("aria-expanded", String(isPlanExpanded));
+  expandPlanButton.setAttribute("aria-label", isPlanExpanded ? "Collapse My Plan" : "Expand My Plan");
+}
+
 function renderAll() {
   renderMuscles();
   renderWorkouts();
@@ -797,6 +807,10 @@ clearPlanButton.addEventListener("click", () => {
   renderWorkouts();
   renderPlan();
   closePlanModal();
+});
+
+expandPlanButton.addEventListener("click", () => {
+  setPlanExpanded(!isPlanExpanded);
 });
 
 if ("serviceWorker" in navigator) {

@@ -274,6 +274,12 @@ h1 {
   margin-bottom: 14px;
 }
 
+.plan-heading-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .panel-heading h2,
 .section-heading h2 {
   margin: 0;
@@ -294,6 +300,42 @@ h1 {
   background: var(--accent-2);
   font-size: 0.78rem;
   font-weight: 850;
+}
+
+.expand-plan-button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.expand-plan-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.expand-plan-button:hover {
+  border-color: rgba(56, 217, 169, 0.42);
+  background: rgba(56, 217, 169, 0.1);
+}
+
+.plan-panel.expanded {
+  position: static;
+  grid-column: 1 / -1;
+  max-height: none;
+}
+
+.plan-panel.expanded .plan-list {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .muscle-list {
@@ -936,6 +978,10 @@ h1 {
     max-height: none;
   }
 
+  .plan-panel.expanded {
+    max-height: none;
+  }
+
   .plan-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -974,6 +1020,10 @@ h1 {
 
   .plan-modal {
     padding: 0;
+  }
+
+  .plan-panel.expanded .plan-list {
+    grid-template-columns: 1fr;
   }
 
   .plan-modal-card {
