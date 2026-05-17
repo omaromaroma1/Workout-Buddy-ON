@@ -614,9 +614,11 @@ h1 {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 14px;
-  padding-bottom: 14px;
-  background: linear-gradient(180deg, rgba(20, 27, 36, 0.98), rgba(20, 27, 36, 0.84));
+  gap: 18px;
+  max-width: 1080px;
+  margin: 0 auto 18px;
+  padding: 0 0 18px;
+  background: linear-gradient(180deg, rgba(20, 27, 36, 0.99), rgba(20, 27, 36, 0.88));
 }
 
 .plan-zoom-heading h2 {
@@ -627,20 +629,50 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.plan-zoom-heading .plan-heading-actions {
+  align-self: start;
+}
+
+.plan-zoom-heading .plan-heading-actions span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 11px;
+  border-radius: 999px;
+  color: #09141a;
+  background: var(--accent-2);
+  font-size: 0.85rem;
+  font-weight: 850;
+}
+
+.plan-zoom-heading .modal-close {
+  position: static;
+  top: auto;
+  right: auto;
+  flex: 0 0 auto;
+}
+
 .plan-zoom-list {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1080px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
 }
 
 .plan-zoom-item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 42px;
-  gap: 14px;
+  grid-template-columns: minmax(0, 1fr) 46px;
+  gap: 16px;
   align-items: start;
-  min-height: 104px;
-  padding: 18px;
+  min-height: 112px;
+  padding: 18px 18px 16px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.055);
+  background:
+    linear-gradient(150deg, rgba(56, 217, 169, 0.08), transparent 50%),
+    rgba(255, 255, 255, 0.055);
 }
 
 .plan-zoom-open {
@@ -671,9 +703,10 @@ h1 {
 }
 
 .plan-zoom-remove {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   font-size: 1rem;
+  justify-self: end;
 }
 
 .plan-modal.open {
@@ -1115,6 +1148,16 @@ h1 {
 
   .plan-zoom-list {
     grid-template-columns: 1fr;
+  }
+
+  .plan-zoom-heading {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .plan-zoom-heading .plan-heading-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .plan-zoom {
