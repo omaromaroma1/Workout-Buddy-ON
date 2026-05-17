@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=25" />
+    <link rel="stylesheet" href="styles.css?v=27" />
   </head>
   <body>
     <div class="app-shell">
@@ -62,6 +62,28 @@
             <button class="chip" type="button" data-filter="gym">Gym</button>
             <button class="chip" type="button" data-filter="beginner">Beginner</button>
           </div>
+        </section>
+
+        <section class="profile-panel" aria-label="Training profile">
+          <div>
+            <p class="eyebrow">Personalized planning</p>
+            <h2>Your Stats</h2>
+          </div>
+          <label>
+            <span>Age</span>
+            <input id="ageInput" type="text" inputmode="numeric" placeholder="16" />
+          </label>
+          <label>
+            <span>Height</span>
+            <input id="heightInput" type="text" inputmode="decimal" placeholder="170" />
+            <small>cm</small>
+          </label>
+          <label>
+            <span>Weight</span>
+            <input id="weightInput" type="text" inputmode="decimal" placeholder="70" />
+            <small>kg</small>
+          </label>
+          <button class="profile-save-button" id="saveProfileButton" type="button">Save stats</button>
         </section>
 
         <section class="layout-grid">
@@ -118,6 +140,19 @@
             <button class="modal-close" id="planZoomCloseButton" type="button" aria-label="Close expanded My Plan">x</button>
           </div>
         </div>
+        <div class="saved-plan-tools" aria-label="Saved plan tools">
+          <label>
+            <span>Plan name</span>
+            <input id="planNameInput" type="text" placeholder="Push day, Week 1..." />
+          </label>
+          <button id="saveNamedPlanButton" class="profile-save-button" type="button">Save plan</button>
+          <label>
+            <span>Load saved</span>
+            <select id="savedPlanSelect"></select>
+          </label>
+          <button id="loadNamedPlanButton" class="profile-save-button" type="button">Load</button>
+          <button id="deleteNamedPlanButton" class="ghost-button saved-delete-button" type="button">Delete</button>
+        </div>
         <div class="plan-list plan-zoom-list" id="planZoomList"></div>
       </div>
     </div>
@@ -129,6 +164,7 @@
         <h2 id="modalTitle">Workout</h2>
         <p class="modal-description" id="modalDescription"></p>
         <div class="meta-row modal-meta" id="modalMeta"></div>
+        <div id="modalRecommend"></div>
         <div class="demo-video" id="modalDemo" aria-label="In app exercise demo"></div>
         <div class="guide-box modal-guide">
           <strong>How to do it</strong>
@@ -137,6 +173,6 @@
       </div>
     </div>
 
-    <script src="app.js?v=25" defer></script>
+    <script src="app.js?v=27" defer></script>
   </body>
 </html>

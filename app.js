@@ -243,7 +243,9 @@ const state = {
   selectedGroup: "chest",
   filter: "all",
   query: "",
-  plan: JSON.parse(localStorage.getItem("workoutBuddyPlan") || "[]")
+  plan: JSON.parse(localStorage.getItem("workoutBuddyPlan") || "[]"),
+  profile: JSON.parse(localStorage.getItem("workoutBuddyProfile") || "{}"),
+  savedPlans: JSON.parse(localStorage.getItem("workoutBuddySavedPlans") || "[]")
 };
 
 function getWorkoutGuide(name, groupLabel, equipment) {
@@ -320,12 +322,22 @@ const planZoom = document.querySelector("#planZoom");
 const planZoomList = document.querySelector("#planZoomList");
 const planZoomCount = document.querySelector("#planZoomCount");
 const planZoomCloseButton = document.querySelector("#planZoomCloseButton");
+const ageInput = document.querySelector("#ageInput");
+const heightInput = document.querySelector("#heightInput");
+const weightInput = document.querySelector("#weightInput");
+const saveProfileButton = document.querySelector("#saveProfileButton");
+const planNameInput = document.querySelector("#planNameInput");
+const saveNamedPlanButton = document.querySelector("#saveNamedPlanButton");
+const savedPlanSelect = document.querySelector("#savedPlanSelect");
+const loadNamedPlanButton = document.querySelector("#loadNamedPlanButton");
+const deleteNamedPlanButton = document.querySelector("#deleteNamedPlanButton");
 const planModal = document.querySelector("#planModal");
 const modalCloseButton = document.querySelector("#modalCloseButton");
 const modalTitle = document.querySelector("#modalTitle");
 const modalGroup = document.querySelector("#modalGroup");
 const modalDescription = document.querySelector("#modalDescription");
 const modalMeta = document.querySelector("#modalMeta");
+const modalRecommend = document.querySelector("#modalRecommend");
 const modalDemo = document.querySelector("#modalDemo");
 const modalGuide = document.querySelector("#modalGuide");
 const demoCache = new Map();
@@ -334,6 +346,14 @@ let isPlanExpanded = false;
 
 function savePlan() {
   localStorage.setItem("workoutBuddyPlan", JSON.stringify(state.plan));
+}
+
+function saveProfile() {
+  localStorage.setItem("workoutBuddyProfile", JSON.stringify(state.profile));
+}
+
+function saveNamedPlans() {
+  localStorage.setItem("workoutBuddySavedPlans", JSON.stringify(state.savedPlans));
 }
 
 function slugify(value) {
@@ -350,6 +370,91 @@ function formatDisplayText(text) {
 
 function getGroupLabel(groupKey) {
   return muscleMeta.find(([key]) => key === groupKey)?.[1] || "Workout";
+}
+
+function getProfileStatus() {
+  const age = Number(state.profile.age);
+  const height = Number(state.profile.height);
+  const weight = Number(state.profile.weight);
+  return {
+    age,
+    height,
+    weight,
+    isComplete: age > 0 && height > 0 && weight > 0
+  };
+}
+
+function getRecommendation(exercise, groupLabel) {
+  const [name, equipment, level] = exercise;
+  const lower = name.toLowerCase();
+  const profile = getProfileStatus();
+  const isHold = /hold|plank|hang|carry|wall sit|sprint|waves|crawl/.test(lower);
+  let sets = level === "Beginner" ? "2-3" : level === "Advanced" ? "4-5" : "3-4";
+  let reps = level === "Beginner" ? "10-15 reps" : level === "Advanced" ? "5-10 reps" : "8-12 reps";
+
+  if (isHold) {
+    reps = level === "Beginner" ? "20-40 sec" : level === "Advanced" ? "40-75 sec" : "30-60 sec";
+  }
+  if (profile.age && profile.age < 16) {
+    sets = "2-3";
+    reps = isHold ? "15-35 sec" : "8-12 reps";
+  }
+  if (profile.age && profile.age >= 50) {
+    sets = level === "Advanced" ? "3-4" : "2-3";
+    reps = isHold ? "20-45 sec" : "8-12 reps";
+  }
+
+  let weightText = "Add your stats for a starting weight.";
+  if (profile.isComplete) {
+    const equipmentText = equipment.toLowerCase();
+    const bodyWeight = profile.weight;
+    let percent = level === "Beginner" ? 0.12 : level === "Advanced" ? 0.35 : 0.22;
+    if (equipmentText.includes("barbell") || equipmentText.includes("gym") || equipmentText.includes("machine")) {
+      percent = level === "Beginner" ? 0.25 : level === "Advanced" ? 0.65 : 0.45;
+    }
+    if (equipmentText.includes("cable") || equipmentText.includes("plate")) {
+      percent = level === "Beginner" ? 0.12 : level === "Advanced" ? 0.3 : 0.2;
+    }
+    if (equipmentText.includes("bodyweight") || equipmentText.includes("body weight") || equipmentText.includes("bar")) {
+      percent = 0;
+    }
+
+    const heightM = profile.height / 100;
+    const bmi = bodyWeight / (heightM * heightM);
+    const ageFactor = profile.age < 16 ? 0.65 : profile.age >= 50 ? 0.8 : 1;
+    const bmiFactor = bmi < 18.5 ? 0.85 : bmi > 30 ? 0.9 : 1;
+    const suggested = Math.max(1, Math.round((bodyWeight * percent * ageFactor * bmiFactor) / 2.5) * 2.5);
+
+    if (percent === 0) {
+      weightText = "Use body weight. Add assistance if form breaks.";
+    } else if (equipmentText.includes("dumbbell")) {
+      weightText = `Start around ${suggested} kg per dumbbell.`;
+    } else {
+      weightText = `Start around ${suggested} kg total.`;
+    }
+  }
+
+  return {
+    sets: `${sets} sets`,
+    reps,
+    weight: weightText,
+    note: `${groupLabel} focus. Stop 1-2 reps before form breaks.`
+  };
+}
+
+function getRecommendationMarkup(exercise, groupLabel) {
+  const rec = getRecommendation(exercise, groupLabel);
+  return `
+    <div class="recommend-box">
+      <strong>Recommended for you</strong>
+      <div>
+        <span>${rec.sets}</span>
+        <span>${rec.reps}</span>
+        <span>${rec.weight}</span>
+      </div>
+      <small>${rec.note}</small>
+    </div>
+  `;
 }
 
 function findExerciseById(id) {
@@ -556,6 +661,23 @@ function renderMuscles() {
     .join("");
 }
 
+function renderProfileForm() {
+  ageInput.value = state.profile.age || "";
+  heightInput.value = state.profile.height || "";
+  weightInput.value = state.profile.weight || "";
+}
+
+function renderSavedPlanOptions() {
+  if (!state.savedPlans.length) {
+    savedPlanSelect.innerHTML = `<option value="">No saved plans yet</option>`;
+    return;
+  }
+
+  savedPlanSelect.innerHTML = state.savedPlans
+    .map((plan) => `<option value="${plan.id}">${formatDisplayText(plan.name)} (${plan.items.length})</option>`)
+    .join("");
+}
+
 function getFilteredWorkouts() {
   const query = state.query.trim().toLowerCase();
   const isGlobalSearch = Boolean(query) || state.filter !== "all";
@@ -623,6 +745,7 @@ function renderWorkouts() {
             <span>${equipment}</span>
             <span>${sets}</span>
           </div>
+          ${getRecommendationMarkup(exercise, groupLabel)}
           <div class="guide-box">
             <strong>How to do it</strong>
             <ol>
@@ -650,6 +773,7 @@ function renderWorkouts() {
 function renderPlan() {
   planCount.textContent = state.plan.length;
   planZoomCount.textContent = state.plan.length;
+  renderSavedPlanOptions();
 
   if (!state.plan.length) {
     planList.innerHTML = `<p class="plan-empty">Your saved exercises will appear here.</p>`;
@@ -661,9 +785,13 @@ function renderPlan() {
     .map(
       (item) => `
       <div class="plan-item">
+        <label class="done-check" aria-label="Mark ${formatDisplayText(item.name)} done">
+          <input type="checkbox" data-complete="${item.id}" ${item.completed ? "checked" : ""} />
+          <span></span>
+        </label>
         <button class="plan-open" type="button" data-open-plan="${item.id}" aria-label="Open ${formatDisplayText(item.name)} full screen">
           <strong>${formatDisplayText(item.name)}</strong>
-          <span>${item.group} | ${item.sets}</span>
+          <span>${item.group} | ${item.sets}${item.completed ? " | Done" : ""}</span>
         </button>
         <button class="remove-plan" type="button" data-remove="${item.id}" aria-label="Remove ${formatDisplayText(item.name)}">x</button>
       </div>
@@ -673,10 +801,14 @@ function renderPlan() {
   const planZoomMarkup = state.plan
     .map(
       (item) => `
-      <div class="plan-zoom-item">
+      <div class="plan-zoom-item${item.completed ? " completed" : ""}">
+        <label class="done-check zoom-done-check" aria-label="Mark ${formatDisplayText(item.name)} done">
+          <input type="checkbox" data-complete="${item.id}" ${item.completed ? "checked" : ""} />
+          <span></span>
+        </label>
         <button class="plan-zoom-open" type="button" data-open-plan="${item.id}" aria-label="Open ${formatDisplayText(item.name)} full screen">
           <strong>${formatDisplayText(item.name)}</strong>
-          <span>${item.group} | ${item.sets}</span>
+          <span>${item.group} | ${item.sets}${item.completed ? " | Done" : ""}</span>
         </button>
         <button class="remove-plan plan-zoom-remove" type="button" data-remove="${item.id}" aria-label="Remove ${formatDisplayText(item.name)}">x</button>
       </div>
@@ -701,8 +833,50 @@ function setPlanExpanded(expanded) {
 
 function renderAll() {
   renderMuscles();
+  renderProfileForm();
   renderWorkouts();
   renderPlan();
+}
+
+function updateCompletion(id, completed) {
+  state.plan = state.plan.map((item) => (item.id === id ? { ...item, completed } : item));
+  savePlan();
+  renderWorkouts();
+  renderPlan();
+}
+
+function saveCurrentPlanByName() {
+  const name = planNameInput.value.trim();
+  if (!name || !state.plan.length) return;
+
+  const savedPlan = {
+    id: `${Date.now()}-${slugify(name)}`,
+    name,
+    savedAt: new Date().toISOString(),
+    items: state.plan.map((item) => ({ ...item }))
+  };
+  state.savedPlans = [savedPlan, ...state.savedPlans.filter((plan) => plan.name.toLowerCase() !== name.toLowerCase())];
+  saveNamedPlans();
+  planNameInput.value = "";
+  renderSavedPlanOptions();
+}
+
+function loadSelectedPlan() {
+  const id = savedPlanSelect.value;
+  const saved = state.savedPlans.find((plan) => plan.id === id);
+  if (!saved) return;
+  state.plan = saved.items.map((item) => ({ ...item }));
+  savePlan();
+  renderWorkouts();
+  renderPlan();
+}
+
+function deleteSelectedPlan() {
+  const id = savedPlanSelect.value;
+  if (!id) return;
+  state.savedPlans = state.savedPlans.filter((plan) => plan.id !== id);
+  saveNamedPlans();
+  renderSavedPlanOptions();
 }
 
 function openWorkoutModal(id) {
@@ -723,6 +897,7 @@ function openWorkoutModal(id) {
   modalGroup.textContent = groupLabel;
   modalDescription.textContent = formatDisplayText(description);
   modalMeta.innerHTML = `<span>${equipment}</span><span>${level}</span><span>${sets}</span>`;
+  modalRecommend.innerHTML = getRecommendationMarkup(exercise || [name, equipment, level, sets, description, []], groupLabel);
   modalDemo.innerHTML = getDemoHtml(name);
   modalGuide.innerHTML = guide.map((step) => `<li>${step}</li>`).join("");
   planModal.classList.add("open");
@@ -786,10 +961,11 @@ workoutGrid.addEventListener("click", (event) => {
     state.plan.push({
       id,
       name: formatDisplayText(exercise[0]),
-      group: groupLabel,
-      equipment: exercise[1],
-      sets: exercise[3]
-    });
+        group: groupLabel,
+        equipment: exercise[1],
+        sets: exercise[3],
+        completed: false
+      });
   }
 
   savePlan();
@@ -813,6 +989,13 @@ planList.addEventListener("click", (event) => {
   }
 });
 
+planList.addEventListener("change", (event) => {
+  const completionBox = event.target.closest("[data-complete]");
+  if (completionBox) {
+    updateCompletion(completionBox.dataset.complete, completionBox.checked);
+  }
+});
+
 planZoomList.addEventListener("click", (event) => {
   const removeButton = event.target.closest("[data-remove]");
   if (removeButton) {
@@ -826,6 +1009,13 @@ planZoomList.addEventListener("click", (event) => {
   const openButton = event.target.closest("[data-open-plan]");
   if (openButton) {
     openPlanModal(openButton.dataset.openPlan);
+  }
+});
+
+planZoomList.addEventListener("change", (event) => {
+  const completionBox = event.target.closest("[data-complete]");
+  if (completionBox) {
+    updateCompletion(completionBox.dataset.complete, completionBox.checked);
   }
 });
 
@@ -866,6 +1056,21 @@ clearPlanButton.addEventListener("click", () => {
 expandPlanButton.addEventListener("click", () => {
   setPlanExpanded(!isPlanExpanded);
 });
+
+saveProfileButton.addEventListener("click", () => {
+  state.profile = {
+    age: Number(ageInput.value) || "",
+    height: Number(heightInput.value) || "",
+    weight: Number(weightInput.value) || ""
+  };
+  saveProfile();
+  renderWorkouts();
+  renderPlan();
+});
+
+saveNamedPlanButton.addEventListener("click", saveCurrentPlanByName);
+loadNamedPlanButton.addEventListener("click", loadSelectedPlan);
+deleteNamedPlanButton.addEventListener("click", deleteSelectedPlan);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
