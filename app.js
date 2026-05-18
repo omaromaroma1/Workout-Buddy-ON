@@ -322,7 +322,6 @@ const planZoom = document.querySelector("#planZoom");
 const planZoomList = document.querySelector("#planZoomList");
 const planZoomCount = document.querySelector("#planZoomCount");
 const planZoomCloseButton = document.querySelector("#planZoomCloseButton");
-const ageInput = document.querySelector("#ageInput");
 const heightInput = document.querySelector("#heightInput");
 const weightInput = document.querySelector("#weightInput");
 const saveProfileButton = document.querySelector("#saveProfileButton");
@@ -331,6 +330,10 @@ const saveNamedPlanButton = document.querySelector("#saveNamedPlanButton");
 const savedPlanSelect = document.querySelector("#savedPlanSelect");
 const loadNamedPlanButton = document.querySelector("#loadNamedPlanButton");
 const deleteNamedPlanButton = document.querySelector("#deleteNamedPlanButton");
+const deleteConfirmPanel = document.querySelector("#deleteConfirmPanel");
+const deleteCodeChallenge = document.querySelector("#deleteCodeChallenge");
+const deleteCodeInput = document.querySelector("#deleteCodeInput");
+const deleteRoutineStatus = document.querySelector("#deleteRoutineStatus");
 const planModal = document.querySelector("#planModal");
 const modalCloseButton = document.querySelector("#modalCloseButton");
 const modalTitle = document.querySelector("#modalTitle");
@@ -343,6 +346,7 @@ const modalGuide = document.querySelector("#modalGuide");
 const demoCache = new Map();
 let activeDemoRequest = 0;
 let isPlanExpanded = false;
+let pendingDelete = null;
 
 function savePlan() {
   localStorage.setItem("workoutBuddyPlan", JSON.stringify(state.plan));
@@ -373,14 +377,12 @@ function getGroupLabel(groupKey) {
 }
 
 function getProfileStatus() {
-  const age = Number(state.profile.age);
   const height = Number(state.profile.height);
   const weight = Number(state.profile.weight);
   return {
-    age,
     height,
     weight,
-    isComplete: age > 0 && height > 0 && weight > 0
+    isComplete: height > 0 && weight > 0
   };
 }
 
@@ -394,14 +396,6 @@ function getRecommendation(exercise, groupLabel) {
 
   if (isHold) {
     reps = level === "Beginner" ? "20-40 sec" : level === "Advanced" ? "40-75 sec" : "30-60 sec";
-  }
-  if (profile.age && profile.age < 16) {
-    sets = "2-3";
-    reps = isHold ? "15-35 sec" : "8-12 reps";
-  }
-  if (profile.age && profile.age >= 50) {
-    sets = level === "Advanced" ? "3-4" : "2-3";
-    reps = isHold ? "20-45 sec" : "8-12 reps";
   }
 
   let weightText = "Add your stats for a starting weight.";
@@ -421,9 +415,8 @@ function getRecommendation(exercise, groupLabel) {
 
     const heightM = profile.height / 100;
     const bmi = bodyWeight / (heightM * heightM);
-    const ageFactor = profile.age < 16 ? 0.65 : profile.age >= 50 ? 0.8 : 1;
     const bmiFactor = bmi < 18.5 ? 0.85 : bmi > 30 ? 0.9 : 1;
-    const suggested = Math.max(1, Math.round((bodyWeight * percent * ageFactor * bmiFactor) / 2.5) * 2.5);
+    const suggested = Math.max(1, Math.round((bodyWeight * percent * bmiFactor) / 2.5) * 2.5);
 
     if (percent === 0) {
       weightText = "Use body weight. Add assistance if form breaks.";
@@ -662,19 +655,31 @@ function renderMuscles() {
 }
 
 function renderProfileForm() {
-  ageInput.value = state.profile.age || "";
   heightInput.value = state.profile.height || "";
   weightInput.value = state.profile.weight || "";
+}
+
+function resetDeleteConfirmation() {
+  pendingDelete = null;
+  deleteConfirmPanel.hidden = true;
+  deleteCodeChallenge.textContent = "";
+  deleteCodeInput.value = "";
+  deleteRoutineStatus.textContent = "";
+  deleteNamedPlanButton.textContent = "Delete";
 }
 
 function renderSavedPlanOptions() {
   if (!state.savedPlans.length) {
     savedPlanSelect.innerHTML = `<option value="">No saved plans yet</option>`;
+    resetDeleteConfirmation();
     return;
   }
 
   savedPlanSelect.innerHTML = state.savedPlans
-    .map((plan) => `<option value="${plan.id}">${formatDisplayText(plan.name)} (${plan.items.length})</option>`)
+    .map((plan) => {
+      const savedDate = plan.savedAt ? new Date(plan.savedAt).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "Saved";
+      return `<option value="${plan.id}">${formatDisplayText(plan.name)} - ${plan.items.length} moves - ${savedDate}</option>`;
+    })
     .join("");
 }
 
@@ -853,30 +858,60 @@ function saveCurrentPlanByName() {
     id: `${Date.now()}-${slugify(name)}`,
     name,
     savedAt: new Date().toISOString(),
-    items: state.plan.map((item) => ({ ...item }))
+    items: state.plan.map((item) => ({ ...item, completed: false }))
   };
   state.savedPlans = [savedPlan, ...state.savedPlans.filter((plan) => plan.name.toLowerCase() !== name.toLowerCase())];
   saveNamedPlans();
   planNameInput.value = "";
   renderSavedPlanOptions();
+  resetDeleteConfirmation();
 }
 
 function loadSelectedPlan() {
   const id = savedPlanSelect.value;
   const saved = state.savedPlans.find((plan) => plan.id === id);
   if (!saved) return;
-  state.plan = saved.items.map((item) => ({ ...item }));
+  state.plan = saved.items.map((item) => ({ ...item, completed: false }));
   savePlan();
   renderWorkouts();
   renderPlan();
+  resetDeleteConfirmation();
+}
+
+function startDeleteConfirmation(saved) {
+  pendingDelete = {
+    id: saved.id,
+    code: String(Math.floor(1000 + Math.random() * 9000))
+  };
+  deleteConfirmPanel.hidden = false;
+  deleteCodeChallenge.textContent = `Security code: ${pendingDelete.code}`;
+  deleteRoutineStatus.textContent = `Type the code to delete ${formatDisplayText(saved.name)}.`;
+  deleteCodeInput.value = "";
+  deleteNamedPlanButton.textContent = "Confirm delete";
+  deleteCodeInput.focus();
 }
 
 function deleteSelectedPlan() {
   const id = savedPlanSelect.value;
   if (!id) return;
+  const saved = state.savedPlans.find((plan) => plan.id === id);
+  if (!saved) return;
+
+  if (!pendingDelete || pendingDelete.id !== id) {
+    startDeleteConfirmation(saved);
+    return;
+  }
+
+  if (deleteCodeInput.value.trim() !== pendingDelete.code) {
+    deleteRoutineStatus.textContent = "That code does not match yet.";
+    deleteCodeInput.focus();
+    return;
+  }
+
   state.savedPlans = state.savedPlans.filter((plan) => plan.id !== id);
   saveNamedPlans();
   renderSavedPlanOptions();
+  resetDeleteConfirmation();
 }
 
 function openWorkoutModal(id) {
@@ -1059,7 +1094,6 @@ expandPlanButton.addEventListener("click", () => {
 
 saveProfileButton.addEventListener("click", () => {
   state.profile = {
-    age: Number(ageInput.value) || "",
     height: Number(heightInput.value) || "",
     weight: Number(weightInput.value) || ""
   };
@@ -1071,6 +1105,12 @@ saveProfileButton.addEventListener("click", () => {
 saveNamedPlanButton.addEventListener("click", saveCurrentPlanByName);
 loadNamedPlanButton.addEventListener("click", loadSelectedPlan);
 deleteNamedPlanButton.addEventListener("click", deleteSelectedPlan);
+savedPlanSelect.addEventListener("change", resetDeleteConfirmation);
+deleteCodeInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    deleteSelectedPlan();
+  }
+});
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {

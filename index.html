@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=27" />
+    <link rel="stylesheet" href="styles.css?v=29" />
   </head>
   <body>
     <div class="app-shell">
@@ -69,10 +69,6 @@
             <p class="eyebrow">Personalized planning</p>
             <h2>Your Stats</h2>
           </div>
-          <label>
-            <span>Age</span>
-            <input id="ageInput" type="text" inputmode="numeric" placeholder="16" />
-          </label>
           <label>
             <span>Height</span>
             <input id="heightInput" type="text" inputmode="decimal" placeholder="170" />
@@ -141,17 +137,39 @@
           </div>
         </div>
         <div class="saved-plan-tools" aria-label="Saved plan tools">
-          <label>
-            <span>Plan name</span>
-            <input id="planNameInput" type="text" placeholder="Push day, Week 1..." />
-          </label>
-          <button id="saveNamedPlanButton" class="profile-save-button" type="button">Save plan</button>
-          <label>
-            <span>Load saved</span>
-            <select id="savedPlanSelect"></select>
-          </label>
-          <button id="loadNamedPlanButton" class="profile-save-button" type="button">Load</button>
-          <button id="deleteNamedPlanButton" class="ghost-button saved-delete-button" type="button">Delete</button>
+          <div class="saved-tool-card">
+            <div>
+              <p class="eyebrow">Save routine</p>
+              <h3>Store this plan</h3>
+            </div>
+            <label>
+              <span>Plan name</span>
+              <input id="planNameInput" type="text" placeholder="Push day, Week 1..." />
+            </label>
+            <button id="saveNamedPlanButton" class="profile-save-button" type="button">Save plan</button>
+          </div>
+          <div class="saved-tool-card">
+            <div>
+              <p class="eyebrow">Saved routines</p>
+              <h3>Load or delete</h3>
+            </div>
+            <label>
+              <span>Routine</span>
+              <select id="savedPlanSelect"></select>
+            </label>
+            <div class="saved-action-row">
+              <button id="loadNamedPlanButton" class="profile-save-button" type="button">Load</button>
+              <button id="deleteNamedPlanButton" class="ghost-button saved-delete-button" type="button">Delete</button>
+            </div>
+            <div class="delete-confirm-panel" id="deleteConfirmPanel" hidden>
+              <span id="deleteCodeChallenge"></span>
+              <label>
+                <span>Enter code</span>
+                <input id="deleteCodeInput" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="4" placeholder="0000" />
+              </label>
+              <small id="deleteRoutineStatus"></small>
+            </div>
+          </div>
         </div>
         <div class="plan-list plan-zoom-list" id="planZoomList"></div>
       </div>
@@ -173,6 +191,6 @@
       </div>
     </div>
 
-    <script src="app.js?v=27" defer></script>
+    <script src="app.js?v=29" defer></script>
   </body>
 </html>

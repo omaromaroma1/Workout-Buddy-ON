@@ -1,6 +1,6 @@
 # Workout Buddy
 
-A static PWA for choosing a muscle group, browsing 168 workouts, searching and filtering across every muscle group, entering age/height/weight for set, rep, and starting weight guidance, watching real in app exercise demos from ExerciseDB, saving named workout plans, checking off completed exercises, and opening saved workouts in a full screen coaching view.
+A static PWA for choosing a muscle group, browsing 168 workouts, searching and filtering across every muscle group, entering height/weight for set, rep, and starting weight guidance, watching real in app exercise demos from ExerciseDB, saving named workout plans, checking off completed exercises, and opening saved workouts in a full screen coaching view.
 
 ## Run locally
 
