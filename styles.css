@@ -692,8 +692,6 @@ h1 {
   max-width: 1160px;
   margin: 0 auto 20px;
   padding: 24px 0 24px;
-  background: linear-gradient(180deg, #070b11 0%, rgba(7, 11, 17, 0.9) 70%, transparent 100%);
-  backdrop-filter: blur(12px);
 }
 
 .plan-zoom-heading h2 {
@@ -772,6 +770,7 @@ h1 {
 
 .plan-zoom-heading .plan-heading-actions {
   align-self: start;
+  gap: 24px;
 }
 
 .plan-zoom-heading .plan-heading-actions span {
@@ -782,8 +781,8 @@ h1 {
   height: 36px;
   padding: 0 11px;
   border-radius: 999px;
-  color: #09141a;
-  background: var(--accent-2);
+  color: #fff;
+  background: #45aaf2;
   font-size: 0.85rem;
   font-weight: 850;
 }
@@ -793,6 +792,9 @@ h1 {
   top: auto;
   right: auto;
   flex: 0 0 auto;
+  color: #45aaf2;
+  border-color: #45aaf2;
+  border-radius: 999px;
 }
 
 .plan-zoom-list {
