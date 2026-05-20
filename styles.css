@@ -691,16 +691,18 @@ h1 {
   gap: 18px;
   max-width: 1160px;
   margin: 0 auto 20px;
-  padding: 12px 0 18px;
-  background: linear-gradient(180deg, rgba(9, 14, 22, 0.99), rgba(9, 14, 22, 0.82));
-  backdrop-filter: blur(16px);
+  padding: 24px 0 24px;
+  background: linear-gradient(180deg, #070b11 0%, rgba(7, 11, 17, 0.9) 70%, transparent 100%);
+  backdrop-filter: blur(12px);
 }
 
 .plan-zoom-heading h2 {
   min-width: 0;
   margin: 0;
-  font-size: clamp(2.1rem, 5vw, 4.1rem);
-  line-height: 1;
+  font-size: clamp(2.4rem, 8vw, 4.8rem);
+  font-weight: 950;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
   overflow-wrap: anywhere;
 }
 
