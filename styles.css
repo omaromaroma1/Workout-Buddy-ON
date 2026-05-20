@@ -1,15 +1,43 @@
 :root {
-  color-scheme: dark;
-  --bg: #0d1117;
-  --surface: #141b24;
-  --surface-2: #1b2532;
-  --ink: #f7fafc;
-  --muted: #aeb9c7;
-  --line: rgba(255, 255, 255, 0.11);
   --accent: #38d9a9;
   --accent-2: #f6c453;
   --accent-3: #ff6b6b;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  --transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0d1117;
+  --surface: rgba(20, 27, 36, 0.7);
+  --surface-hover: rgba(255, 255, 255, 0.05);
+  --ink: #f7fafc;
+  --muted: #aeb9c7;
+  --line: rgba(255, 255, 255, 0.1);
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  --glass: blur(12px);
+  --modal-bg: #070b11;
+  --overlay: rgba(4, 8, 13, 0.85);
+  --input-bg: rgba(0, 0, 0, 0.25);
+  --tool-card-bg: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --surface: rgba(255, 255, 255, 0.8);
+  --surface-hover: rgba(0, 0, 0, 0.03);
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: rgba(0, 0, 0, 0.08);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --glass: blur(10px);
+  --modal-bg: #f1f5f9;
+  --overlay: rgba(241, 245, 249, 0.9);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --tool-card-bg: rgba(255, 255, 255, 0.6);
 }
 
 * {
@@ -18,18 +46,29 @@
 
 html {
   min-height: 100%;
+  transition: background var(--transition);
+}
+
+[data-theme="dark"] html {
   background:
-    radial-gradient(circle at 18% 0%, rgba(56, 217, 169, 0.16), transparent 28rem),
+    radial-gradient(circle at 18% 0%, rgba(56, 217, 169, 0.12), transparent 30rem),
     linear-gradient(130deg, #0d1117 0%, #111827 48%, #101820 100%);
+}
+
+[data-theme="light"] html {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(56, 217, 169, 0.08), transparent 25rem),
+    #f8fafc;
 }
 
 body {
   margin: 0;
-  min-height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
-  font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: var(--ink);
+  background: transparent;
+  line-height: 1.5;
 }
 
 body.modal-open {
@@ -67,6 +106,37 @@ button {
   min-height: 52px;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.icon-button svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sun-icon { display: none; }
+.moon-icon { display: block; }
+
+[data-theme="light"] .sun-icon { display: block; }
+[data-theme="light"] .moon-icon { display: none; }
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -89,14 +159,13 @@ button {
 .chip,
 .muscle-button,
 .demo-button,
-.add-button {
+.add-button,
+.icon-button {
   border: 1px solid var(--line);
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.06);
-  transition:
-    transform 160ms ease,
-    background 160ms ease,
-    border-color 160ms ease;
+  background: var(--surface);
+  backdrop-filter: var(--glass);
+  transition: all var(--transition);
 }
 
 .ghost-button {
@@ -216,10 +285,10 @@ h1 {
 .saved-plan-tools select {
   width: 100%;
   min-height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--line);
   border-radius: 10px;
   color: var(--ink);
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--input-bg);
   padding: 0 12px;
   outline: 0;
   transition: border-color 160ms ease, background 160ms ease;
@@ -228,7 +297,7 @@ h1 {
 .saved-plan-tools input:focus,
 .saved-plan-tools select:focus {
   border-color: var(--accent);
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--surface);
 }
 
 .primary-button {
@@ -324,10 +393,10 @@ h1 {
   overflow: auto;
   padding: 16px;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(20, 27, 36, 0.78);
+  border-radius: var(--radius-md);
+  background: var(--surface);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(16px);
+  backdrop-filter: var(--glass);
 }
 
 .panel-heading,
@@ -458,11 +527,18 @@ h1 {
   display: grid;
   gap: 14px;
   min-width: 0;
-  padding: 18px;
+  padding: 20px;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: linear-gradient(150deg, rgba(255, 255, 255, 0.088), rgba(255, 255, 255, 0.045));
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  backdrop-filter: var(--glass);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.workout-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
 }
 
 .card-top {
@@ -661,7 +737,7 @@ h1 {
   align-items: stretch;
   justify-content: center;
   padding: clamp(12px, 3vw, 30px);
-  background: rgba(4, 8, 13, 0.78);
+  background: var(--overlay);
   backdrop-filter: blur(18px);
 }
 
@@ -675,7 +751,7 @@ h1 {
   padding: 0;
   background:
     linear-gradient(135deg, rgba(56, 217, 169, 0.1), transparent 38%),
-    #070b11;
+    var(--modal-bg);
 }
 
 .plan-zoom.open {
@@ -690,9 +766,7 @@ h1 {
   padding: clamp(18px, 4vw, 46px);
   border: 0;
   border-radius: 0;
-  background:
-    linear-gradient(180deg, rgba(18, 25, 34, 0.98), rgba(8, 12, 18, 0.99)),
-    rgba(20, 27, 36, 0.98);
+  background: var(--modal-bg);
 }
 
 .plan-zoom-heading {
@@ -734,16 +808,16 @@ h1 {
   align-items: end;
   min-width: 0;
   padding: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--line);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.03);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: var(--tool-card-bg);
+  box-shadow: var(--shadow);
   transition: border-color 160ms ease, background 160ms ease;
 }
 
 .saved-tool-card:hover {
-  border-color: rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accent);
+  background: var(--surface-hover);
 }
 
 .saved-tool-card > div:first-child {
@@ -1314,6 +1388,7 @@ h1 {
     position: static;
     grid-column: 1 / -1;
     max-height: none;
+    order: -1;
   }
 
   .plan-list {

@@ -243,9 +243,17 @@ const state = {
   selectedGroup: "chest",
   filter: "all",
   query: "",
+  theme: localStorage.getItem("workoutBuddyTheme") || "dark",
   plan: JSON.parse(localStorage.getItem("workoutBuddyPlan") || "[]"),
   savedPlans: JSON.parse(localStorage.getItem("workoutBuddySavedPlans") || "[]")
 };
+
+function applyTheme() {
+  document.documentElement.setAttribute("data-theme", state.theme);
+  localStorage.setItem("workoutBuddyTheme", state.theme);
+}
+
+applyTheme();
 
 function getWorkoutGuide(name, groupLabel, equipment) {
   const lower = name.toLowerCase();
@@ -306,6 +314,7 @@ function getWorkoutGuide(name, groupLabel, equipment) {
   return [setup, `Set your posture so the ${groupLabel.toLowerCase()} muscle can do most of the work.`, "Move through the range slowly and keep tension on the target muscle.", "Pause briefly at the hardest part of the rep.", "Return under control and stop if you feel sharp pain."];
 }
 
+const themeToggle = document.querySelector("#themeToggle");
 const muscleList = document.querySelector("#muscleList");
 const workoutGrid = document.querySelector("#workoutGrid");
 const selectedGroupLabel = document.querySelector("#selectedGroupLabel");
@@ -989,6 +998,11 @@ saveNamedPlanButton.addEventListener("click", saveCurrentPlanByName);
 loadNamedPlanButton.addEventListener("click", loadSelectedPlan);
 deleteNamedPlanButton.addEventListener("click", deleteSelectedPlan);
 savedPlanSelect.addEventListener("change", resetDeleteConfirmation);
+
+themeToggle.addEventListener("click", () => {
+  state.theme = state.theme === "dark" ? "light" : "dark";
+  applyTheme();
+});
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
