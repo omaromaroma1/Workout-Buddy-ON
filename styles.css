@@ -22,6 +22,7 @@
   --overlay: rgba(4, 8, 13, 0.85);
   --input-bg: rgba(0, 0, 0, 0.25);
   --tool-card-bg: rgba(255, 255, 255, 0.03);
+  --action-blue: #45aaf2;
 }
 
 [data-theme="light"] {
@@ -38,6 +39,7 @@
   --overlay: rgba(241, 245, 249, 0.9);
   --input-bg: rgba(255, 255, 255, 0.9);
   --tool-card-bg: rgba(255, 255, 255, 0.6);
+  --action-blue: #2d98da;
 }
 
 * {
@@ -881,7 +883,7 @@ h1 {
   padding: 0 11px;
   border-radius: 999px;
   color: #fff;
-  background: #45aaf2;
+  background: var(--action-blue);
   font-size: 0.85rem;
   font-weight: 850;
 }
@@ -891,8 +893,8 @@ h1 {
   top: auto;
   right: auto;
   flex: 0 0 auto;
-  color: #45aaf2;
-  border-color: #45aaf2;
+  color: var(--action-blue);
+  border-color: var(--action-blue);
   border-radius: 999px;
 }
 
@@ -1200,7 +1202,7 @@ h1 {
   top: 90px;
   width: 13px;
   height: 70px;
-  background: #45aaf2;
+  background: var(--action-blue);
 }
 
 .demo-leg-left {
