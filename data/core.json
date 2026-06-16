@@ -1,0 +1,230 @@
+[
+  {
+    "id": "plank",
+    "name": "Forearm Plank",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Rectus abdominis", "Transverse abdominis"],
+    "secondaryMuscles": ["Obliques", "Erector spinae", "Gluteus maximus", "Anterior deltoid"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "animationType": "plank",
+    "instructions": [
+      "Lie face down and place your forearms on the floor with elbows directly under your shoulders, hands pointing forward.",
+      "Tuck your toes under and lift your hips off the floor so your body forms a straight line from head to heels.",
+      "Brace your abs, squeeze your glutes, and keep your neck neutral by gazing at the floor just ahead of your hands.",
+      "Hold the position for the prescribed time while breathing steadily, then lower your knees to finish."
+    ],
+    "formCues": [
+      "Keep hips level with shoulders, neither sagging nor piking up",
+      "Brace the core as if preparing to take a punch to the stomach",
+      "Squeeze glutes and quads to lock the whole body rigid"
+    ],
+    "commonMistakes": [
+      "Letting the lower back sag and the hips drop",
+      "Holding the breath instead of breathing steadily",
+      "Raising the hips too high into a pike position"
+    ],
+    "sets": "3",
+    "reps": "30-60s"
+  },
+  {
+    "id": "hanging-leg-raise",
+    "name": "Hanging Leg Raise",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Rectus abdominis", "Iliopsoas (hip flexors)"],
+    "secondaryMuscles": ["Obliques", "Forearm flexors", "Rectus femoris"],
+    "equipment": "Bodyweight",
+    "difficulty": "Advanced",
+    "animationType": "leg-raise",
+    "instructions": [
+      "Hang from a pull-up bar with an overhand grip, arms fully extended and body relaxed.",
+      "Brace your core and posteriorly tilt your pelvis to keep the body from swinging.",
+      "Keeping your legs straight, raise them in front of you until they reach hip height or higher.",
+      "Pause briefly at the top, then lower your legs under control back to the start without swinging."
+    ],
+    "formCues": [
+      "Initiate by curling the pelvis up, not just lifting with the hip flexors",
+      "Keep the descent slow and controlled to eliminate swing",
+      "Keep a firm grip and engaged lats for shoulder stability"
+    ],
+    "commonMistakes": [
+      "Using momentum and swinging the body to throw the legs up",
+      "Only raising the legs partway with no pelvic tilt",
+      "Dropping the legs quickly instead of controlling the lowering phase"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "lying-leg-raise",
+    "name": "Lying Leg Raise",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Rectus abdominis", "Iliopsoas (hip flexors)"],
+    "secondaryMuscles": ["Obliques", "Transverse abdominis"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "animationType": "leg-raise",
+    "instructions": [
+      "Lie flat on your back with legs extended and hands placed under your glutes or flat by your sides.",
+      "Press your lower back gently into the floor and brace your core.",
+      "Keeping your legs straight, raise them until they are roughly vertical at about 90 degrees.",
+      "Lower the legs slowly and stop just before they touch the floor to keep tension, then repeat."
+    ],
+    "formCues": [
+      "Keep the lower back flat against the floor throughout",
+      "Move slowly, especially on the lowering phase",
+      "Avoid arching the back as the legs descend"
+    ],
+    "commonMistakes": [
+      "Letting the lower back arch off the floor at the bottom",
+      "Using momentum to bounce the legs up",
+      "Bending the knees excessively to make it easier"
+    ],
+    "sets": "3",
+    "reps": "12-15"
+  },
+  {
+    "id": "bicycle-crunch",
+    "name": "Bicycle Crunch",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Obliques", "Rectus abdominis"],
+    "secondaryMuscles": ["Transverse abdominis", "Iliopsoas (hip flexors)"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "animationType": "rotation",
+    "instructions": [
+      "Lie on your back with hands lightly cupped behind your head and knees bent, feet off the floor.",
+      "Brace your core and lift your shoulder blades off the ground.",
+      "Rotate your torso to bring one shoulder toward the opposite knee while extending the other leg straight.",
+      "Switch sides in a smooth pedaling motion, bringing the opposite shoulder toward the opposite knee.",
+      "Continue alternating sides under control for the prescribed reps."
+    ],
+    "formCues": [
+      "Rotate from the torso rather than yanking on the neck",
+      "Keep the lower back in contact with the floor",
+      "Move with control instead of racing through reps"
+    ],
+    "commonMistakes": [
+      "Pulling on the head and straining the neck",
+      "Going too fast and losing rotation through the torso",
+      "Lifting the lower back off the floor"
+    ],
+    "sets": "3",
+    "reps": "15-20 per side"
+  },
+  {
+    "id": "russian-twist",
+    "name": "Russian Twist",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Obliques", "Rectus abdominis"],
+    "secondaryMuscles": ["Transverse abdominis", "Iliopsoas (hip flexors)"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "rotation",
+    "instructions": [
+      "Sit on the floor with knees bent and hold a dumbbell or plate at chest level with both hands.",
+      "Lean your torso back to about 45 degrees and brace your core, keeping your spine long.",
+      "Lift your feet off the floor for more challenge, or keep your heels down for an easier version.",
+      "Rotate your torso to one side, bringing the weight beside your hip, then rotate to the other side.",
+      "Continue alternating sides under control for the prescribed reps."
+    ],
+    "formCues": [
+      "Rotate through the trunk, not just the arms",
+      "Keep the chest up and spine long, avoiding rounding",
+      "Control the tempo to keep tension on the obliques"
+    ],
+    "commonMistakes": [
+      "Swinging the arms while the torso stays still",
+      "Rounding the lower back as you lean away",
+      "Moving too fast and losing core tension"
+    ],
+    "sets": "3",
+    "reps": "12-16 per side"
+  },
+  {
+    "id": "cable-woodchop",
+    "name": "Cable Woodchop",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Obliques", "Transverse abdominis"],
+    "secondaryMuscles": ["Rectus abdominis", "Erector spinae", "Anterior deltoid", "Gluteus medius"],
+    "equipment": "Cable",
+    "difficulty": "Intermediate",
+    "animationType": "rotation",
+    "instructions": [
+      "Set a cable pulley to a high position and grip the handle with both hands.",
+      "Stand side-on to the machine with feet shoulder-width apart, arms extended up toward the pulley.",
+      "Brace your core and pull the handle down and across your body toward the opposite hip, rotating your torso.",
+      "Pivot the rear foot as you rotate, keeping your arms relatively straight throughout the chop.",
+      "Return slowly along the same path to the start, then complete all reps before switching sides."
+    ],
+    "formCues": [
+      "Drive the rotation from your core, not just your arms",
+      "Allow the back hip and foot to pivot with the movement",
+      "Keep the arms long and control the return phase"
+    ],
+    "commonMistakes": [
+      "Pulling with the arms instead of rotating the trunk",
+      "Using too much weight and losing control",
+      "Keeping the feet planted and twisting only at the lower back"
+    ],
+    "sets": "3",
+    "reps": "10-12 per side"
+  },
+  {
+    "id": "mountain-climbers",
+    "name": "Mountain Climbers",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Rectus abdominis", "Iliopsoas (hip flexors)"],
+    "secondaryMuscles": ["Obliques", "Transverse abdominis", "Anterior deltoid", "Quadriceps"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "animationType": "plank",
+    "instructions": [
+      "Start in a high plank position with hands under your shoulders and your body in a straight line.",
+      "Brace your core and keep your hips level with your shoulders.",
+      "Drive one knee toward your chest, then quickly switch to drive the other knee forward.",
+      "Continue alternating legs in a running motion while keeping the upper body stable.",
+      "Maintain a steady rhythm for the prescribed time."
+    ],
+    "formCues": [
+      "Keep the hips low and level, avoiding piking them up",
+      "Keep shoulders stacked directly over the wrists",
+      "Maintain a tight core throughout the movement"
+    ],
+    "commonMistakes": [
+      "Letting the hips bounce or pike up with each knee drive",
+      "Placing the hands too far forward and straining the shoulders",
+      "Bouncing on the feet instead of driving the knees with control"
+    ],
+    "sets": "3",
+    "reps": "20-30s"
+  },
+  {
+    "id": "floor-crunch",
+    "name": "Floor Crunch",
+    "muscleGroup": "Core",
+    "primaryMuscles": ["Rectus abdominis"],
+    "secondaryMuscles": ["Obliques", "Transverse abdominis"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "animationType": "crunch",
+    "instructions": [
+      "Lie on your back with knees bent and feet flat on the floor, hands lightly behind your head or crossed over your chest.",
+      "Brace your core and press your lower back gently into the floor.",
+      "Curl your shoulder blades off the floor by contracting your abs, exhaling as you lift.",
+      "Pause briefly at the top, then lower your shoulders back down under control."
+    ],
+    "formCues": [
+      "Curl the ribcage toward the pelvis rather than pulling on the neck",
+      "Keep a small space between chin and chest",
+      "Exhale on the way up to maximize the contraction"
+    ],
+    "commonMistakes": [
+      "Pulling on the head and straining the neck",
+      "Using momentum to jerk up instead of a controlled curl",
+      "Lifting the entire back off the floor like a sit-up"
+    ],
+    "sets": "3",
+    "reps": "15-20"
+  }
+]

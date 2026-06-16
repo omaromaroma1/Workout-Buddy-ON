@@ -1,0 +1,205 @@
+[
+  {
+    "id": "barbell-curl",
+    "name": "Barbell Curl",
+    "muscleGroup": "Biceps",
+    "primaryMuscles": ["Biceps brachii"],
+    "secondaryMuscles": ["Brachialis", "Brachioradialis", "Forearm flexors"],
+    "equipment": "Barbell",
+    "difficulty": "Beginner",
+    "animationType": "curl",
+    "instructions": [
+      "Stand tall with feet hip-width apart, holding a barbell with an underhand (supinated) grip about shoulder-width.",
+      "Let the bar hang at arm's length against your thighs, elbows tucked close to your sides and shoulders back.",
+      "Curl the bar upward by flexing at the elbows, keeping your upper arms stationary, until the bar reaches shoulder height.",
+      "Squeeze the biceps briefly at the top without swinging the torso.",
+      "Lower the bar slowly under control back to the starting position, fully extending the elbows."
+    ],
+    "formCues": [
+      "Keep elbows pinned to your sides throughout",
+      "Move only at the elbow, not the shoulders or back",
+      "Control the lowering phase for 2-3 seconds"
+    ],
+    "commonMistakes": [
+      "Using momentum and swinging the hips to heave the weight up",
+      "Letting the elbows drift forward at the top",
+      "Bouncing the bar at the bottom instead of lowering under control"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "dumbbell-curl",
+    "name": "Dumbbell Curl",
+    "muscleGroup": "Biceps",
+    "primaryMuscles": ["Biceps brachii"],
+    "secondaryMuscles": ["Brachialis", "Brachioradialis"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "curl",
+    "instructions": [
+      "Stand or sit upright holding a dumbbell in each hand at arm's length, palms facing your thighs.",
+      "Keep your elbows close to your torso and your shoulders back and down.",
+      "Curl one or both dumbbells upward, rotating your wrists so the palms face up (supinate) as you lift.",
+      "Continue until the dumbbells are near shoulder level and squeeze the biceps.",
+      "Lower the dumbbells slowly back to full extension, reversing the wrist rotation."
+    ],
+    "formCues": [
+      "Supinate the wrist as you curl for a full biceps contraction",
+      "Keep upper arms still and elbows by your sides",
+      "Lower under control without dropping the weight"
+    ],
+    "commonMistakes": [
+      "Swinging the body to generate momentum",
+      "Allowing the elbows to flare out or drift forward",
+      "Using too heavy a weight and shortening the range of motion"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "hammer-curl",
+    "name": "Hammer Curl",
+    "muscleGroup": "Biceps",
+    "primaryMuscles": ["Biceps brachii", "Brachialis"],
+    "secondaryMuscles": ["Brachioradialis", "Forearm flexors"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "curl",
+    "instructions": [
+      "Stand tall holding a dumbbell in each hand with a neutral grip (palms facing each other).",
+      "Keep your elbows tucked to your sides and arms fully extended at the start.",
+      "Curl the dumbbells upward while maintaining the neutral, thumbs-up grip throughout.",
+      "Raise until the dumbbells reach shoulder height and pause briefly.",
+      "Lower the dumbbells slowly and under control back to full extension."
+    ],
+    "formCues": [
+      "Maintain a neutral grip for the entire rep",
+      "Keep wrists straight and elbows fixed at your sides",
+      "Control the descent rather than letting gravity drop the weight"
+    ],
+    "commonMistakes": [
+      "Swinging the torso to lift heavier weight",
+      "Letting the elbows drift forward or flare out",
+      "Rushing the eccentric portion of the rep"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "preacher-curl",
+    "name": "Preacher Curl",
+    "muscleGroup": "Biceps",
+    "primaryMuscles": ["Biceps brachii"],
+    "secondaryMuscles": ["Brachialis", "Brachioradialis"],
+    "equipment": "EZ Bar",
+    "difficulty": "Intermediate",
+    "animationType": "curl",
+    "instructions": [
+      "Sit at a preacher bench and adjust the seat so the top of the pad sits just under your armpits.",
+      "Rest the backs of your upper arms flat on the angled pad and grip an EZ bar with an underhand grip.",
+      "Start with the arms nearly extended, keeping a slight bend at the elbow to protect the joint.",
+      "Curl the bar upward by flexing the elbows until your forearms are near vertical.",
+      "Squeeze the biceps at the top, then lower slowly until the arms are almost fully extended."
+    ],
+    "formCues": [
+      "Keep the backs of your arms pressed into the pad",
+      "Avoid fully locking out and hyperextending at the bottom",
+      "Lower with a slow, controlled tempo"
+    ],
+    "commonMistakes": [
+      "Letting the arms snap into full extension at the bottom",
+      "Lifting the elbows off the pad to cheat the weight up",
+      "Using too much weight and dropping the bar on the descent"
+    ],
+    "sets": "3",
+    "reps": "8-12"
+  },
+  {
+    "id": "concentration-curl",
+    "name": "Concentration Curl",
+    "muscleGroup": "Biceps",
+    "primaryMuscles": ["Biceps brachii"],
+    "secondaryMuscles": ["Brachialis"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "curl",
+    "instructions": [
+      "Sit on a bench with your feet flat and spread wider than hip-width.",
+      "Hold a dumbbell in one hand and brace the back of that upper arm against the inside of your thigh.",
+      "Let the dumbbell hang at arm's length with your palm facing inward toward the opposite leg.",
+      "Curl the dumbbell toward your shoulder by flexing only at the elbow, supinating slightly as you lift.",
+      "Squeeze the biceps hard at the top, then lower slowly back to full extension."
+    ],
+    "formCues": [
+      "Keep the upper arm braced against your thigh and still",
+      "Squeeze at the top for a strong peak contraction",
+      "Move only at the elbow, isolating the biceps"
+    ],
+    "commonMistakes": [
+      "Swinging the dumbbell up using shoulder or back movement",
+      "Not achieving full extension at the bottom",
+      "Rushing reps instead of controlling the lowering phase"
+    ],
+    "sets": "3",
+    "reps": "10-15"
+  },
+  {
+    "id": "cable-curl",
+    "name": "Cable Curl",
+    "muscleGroup": "Biceps",
+    "primaryMuscles": ["Biceps brachii"],
+    "secondaryMuscles": ["Brachialis", "Brachioradialis"],
+    "equipment": "Cable",
+    "difficulty": "Beginner",
+    "animationType": "curl",
+    "instructions": [
+      "Attach a straight or EZ bar to a low cable pulley and grip it with an underhand grip.",
+      "Stand upright a step back from the machine with feet shoulder-width and elbows tucked to your sides.",
+      "Start with the arms extended and the cable under tension at the bottom.",
+      "Curl the bar upward toward your shoulders by flexing at the elbows, keeping the upper arms still.",
+      "Squeeze the biceps at the top, then lower slowly to full extension while maintaining cable tension."
+    ],
+    "formCues": [
+      "Keep constant tension on the cable throughout the rep",
+      "Pin your elbows to your sides and move only at the elbow",
+      "Resist the cable on the way down for a controlled eccentric"
+    ],
+    "commonMistakes": [
+      "Leaning back or using body sway to move the weight",
+      "Letting the stack slam and losing tension at the bottom",
+      "Allowing the elbows to drift forward at the top"
+    ],
+    "sets": "3",
+    "reps": "10-15"
+  },
+  {
+    "id": "incline-dumbbell-curl",
+    "name": "Incline Dumbbell Curl",
+    "muscleGroup": "Biceps",
+    "primaryMuscles": ["Biceps brachii"],
+    "secondaryMuscles": ["Brachialis", "Brachioradialis"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "curl",
+    "instructions": [
+      "Set an adjustable bench to roughly a 45-60 degree incline and sit back against it.",
+      "Hold a dumbbell in each hand, letting your arms hang straight down behind your torso, palms facing forward.",
+      "Keep your back against the pad and your upper arms stationary throughout.",
+      "Curl both dumbbells upward by flexing at the elbows until they reach shoulder level.",
+      "Squeeze the biceps at the top, then lower slowly to a full stretch at the bottom."
+    ],
+    "formCues": [
+      "Let the arms hang back to maximize the biceps stretch",
+      "Keep your shoulder blades and back on the bench",
+      "Control the eccentric to take advantage of the stretched position"
+    ],
+    "commonMistakes": [
+      "Letting the elbows swing forward to shorten the range",
+      "Lifting the back off the bench to cheat the weight",
+      "Using excessive weight and losing the deep stretch"
+    ],
+    "sets": "3",
+    "reps": "10-12"
+  }
+]

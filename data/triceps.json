@@ -1,0 +1,205 @@
+[
+  {
+    "id": "cable-triceps-pushdown-rope",
+    "name": "Cable Triceps Pushdown (Rope)",
+    "muscleGroup": "Triceps",
+    "primaryMuscles": ["Triceps brachii (lateral head)", "Triceps brachii (medial head)"],
+    "secondaryMuscles": ["Triceps brachii (long head)", "Anconeus"],
+    "equipment": "Cable",
+    "difficulty": "Beginner",
+    "animationType": "pushdown",
+    "instructions": [
+      "Attach a rope to a high pulley and grip an end in each hand with thumbs up.",
+      "Stand tall, brace your core, and pin your elbows snugly to your sides.",
+      "Keeping the upper arms fixed, extend the elbows to drive the rope down and slightly apart at the bottom.",
+      "Pause briefly with arms fully straight and the triceps fully contracted.",
+      "Control the rope back up until your forearms are just above parallel, then repeat."
+    ],
+    "formCues": [
+      "Keep elbows tucked and stationary throughout.",
+      "Spread the rope ends apart at lockout for a full contraction.",
+      "Move only at the elbow, not the shoulder."
+    ],
+    "commonMistakes": [
+      "Flaring the elbows or letting them drift forward.",
+      "Using body english or leaning to push the weight down.",
+      "Cutting the range short at the top or bottom."
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  },
+  {
+    "id": "overhead-cable-rope-extension",
+    "name": "Overhead Cable Rope Triceps Extension",
+    "muscleGroup": "Triceps",
+    "primaryMuscles": ["Triceps brachii (long head)"],
+    "secondaryMuscles": ["Triceps brachii (lateral head)", "Triceps brachii (medial head)"],
+    "equipment": "Cable",
+    "difficulty": "Intermediate",
+    "animationType": "extension-overhead",
+    "instructions": [
+      "Set the pulley to a low or mid position, attach a rope, then face away from the stack.",
+      "Grip the rope and raise your hands overhead with elbows bent and pointing forward.",
+      "Stagger your stance and keep a tall torso with a slight forward lean for stability.",
+      "Extend your elbows to press the rope forward and up until your arms are fully straight.",
+      "Pause at lockout, then lower under control to a deep stretch behind your head and repeat."
+    ],
+    "formCues": [
+      "Keep the upper arms still and high; hinge only at the elbows.",
+      "Feel a deep stretch in the long head at the bottom.",
+      "Keep your ribs down and core braced to protect the lower back."
+    ],
+    "commonMistakes": [
+      "Letting the elbows flare wide and drop on each rep.",
+      "Overarching the lower back to move heavier weight.",
+      "Shortening the range and skipping the stretch at the bottom."
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  },
+  {
+    "id": "ez-bar-skullcrusher",
+    "name": "EZ-Bar Skullcrusher (Lying Triceps Extension)",
+    "muscleGroup": "Triceps",
+    "primaryMuscles": ["Triceps brachii (long head)", "Triceps brachii (medial head)"],
+    "secondaryMuscles": ["Triceps brachii (lateral head)", "Anconeus"],
+    "equipment": "EZ Bar",
+    "difficulty": "Intermediate",
+    "animationType": "extension-overhead",
+    "instructions": [
+      "Lie on a flat bench holding an EZ bar over your chest with a shoulder-width grip.",
+      "Tilt your upper arms slightly back so the elbows point up and a touch behind you, not straight up.",
+      "Keeping the upper arms fixed, bend the elbows to lower the bar toward your forehead or just behind your head.",
+      "Stop when you feel a strong triceps stretch, then extend the elbows to press the bar back up.",
+      "Lock out just short of full elbow extension to keep tension, then repeat."
+    ],
+    "formCues": [
+      "Keep elbows pointing up and roughly shoulder-width.",
+      "Lower toward the top of the forehead or behind the head, not the face.",
+      "Control the eccentric; never let the bar drop."
+    ],
+    "commonMistakes": [
+      "Flaring the elbows out, shifting load off the triceps.",
+      "Turning it into a pullover by moving the shoulders.",
+      "Using too much weight and losing the bar path near the face."
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "close-grip-barbell-bench-press",
+    "name": "Close-Grip Barbell Bench Press",
+    "muscleGroup": "Triceps",
+    "primaryMuscles": ["Triceps brachii (medial head)", "Triceps brachii (lateral head)"],
+    "secondaryMuscles": ["Pectoralis major", "Anterior deltoid", "Triceps brachii (long head)"],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "push-horizontal",
+    "instructions": [
+      "Lie on a flat bench and grip the bar slightly inside shoulder width, roughly 8 to 12 inches apart.",
+      "Unrack the bar and hold it over your chest with wrists stacked over your elbows.",
+      "Lower the bar under control to your lower chest while keeping your elbows tucked close to your sides.",
+      "Lightly touch the chest, then press the bar back up by extending the elbows.",
+      "Lock out over the chest without flaring the elbows, then repeat."
+    ],
+    "formCues": [
+      "Keep elbows tucked at roughly 30 to 45 degrees, not flared.",
+      "Grip just inside shoulder width; avoid a painfully narrow grip.",
+      "Drive through the bar to extend the elbows powerfully."
+    ],
+    "commonMistakes": [
+      "Gripping too narrow, straining the wrists.",
+      "Flaring the elbows and turning it into a chest press.",
+      "Bouncing the bar off the chest."
+    ],
+    "sets": "3-4",
+    "reps": "6-10"
+  },
+  {
+    "id": "parallel-bar-triceps-dips",
+    "name": "Parallel Bar Triceps Dips",
+    "muscleGroup": "Triceps",
+    "primaryMuscles": ["Triceps brachii (lateral head)", "Triceps brachii (medial head)", "Triceps brachii (long head)"],
+    "secondaryMuscles": ["Pectoralis major (lower)", "Anterior deltoid"],
+    "equipment": "Bodyweight",
+    "difficulty": "Intermediate",
+    "animationType": "push-vertical",
+    "instructions": [
+      "Grip parallel bars and press up to support yourself with arms straight and shoulders down.",
+      "Keep your torso as upright as possible to bias the triceps over the chest.",
+      "Bend your elbows to lower your body until your upper arms reach about parallel to the floor.",
+      "Keep your elbows tracking back and close, not flaring wide.",
+      "Press through your palms to extend the elbows and return to the locked-out start."
+    ],
+    "formCues": [
+      "Stay upright with elbows tucked to emphasize the triceps.",
+      "Lower only to a comfortable shoulder depth (about parallel).",
+      "Keep your shoulders pulled down and back, away from your ears."
+    ],
+    "commonMistakes": [
+      "Descending too deep and stressing the shoulders.",
+      "Flaring the elbows wide, shifting load and irritating the joints.",
+      "Shrugging the shoulders up at the bottom."
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "dumbbell-triceps-kickback",
+    "name": "Dumbbell Triceps Kickback",
+    "muscleGroup": "Triceps",
+    "primaryMuscles": ["Triceps brachii (lateral head)", "Triceps brachii (long head)"],
+    "secondaryMuscles": ["Triceps brachii (medial head)", "Posterior deltoid"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "pushdown",
+    "instructions": [
+      "Hold a dumbbell in one hand and hinge forward at the hips until your torso is near parallel to the floor.",
+      "Brace your free hand on a bench and keep a flat, neutral back.",
+      "Raise your upper arm so the elbow is pinned alongside your torso, with the forearm hanging down.",
+      "Extend the elbow to straighten your arm fully, squeezing the triceps at the top.",
+      "Pause at lockout, then lower the forearm under control and repeat before switching sides."
+    ],
+    "formCues": [
+      "Keep the upper arm fixed and parallel to the floor.",
+      "Fully straighten the arm and squeeze at the top.",
+      "Use light to moderate weight and control the lowering phase."
+    ],
+    "commonMistakes": [
+      "Swinging the weight up with momentum.",
+      "Dropping the elbow so only the shoulder moves.",
+      "Rounding the back during the hinge."
+    ],
+    "sets": "3",
+    "reps": "12-15"
+  },
+  {
+    "id": "diamond-push-up",
+    "name": "Diamond Push-Up",
+    "muscleGroup": "Triceps",
+    "primaryMuscles": ["Triceps brachii (lateral head)", "Triceps brachii (medial head)"],
+    "secondaryMuscles": ["Pectoralis major", "Anterior deltoid", "Triceps brachii (long head)"],
+    "equipment": "Bodyweight",
+    "difficulty": "Intermediate",
+    "animationType": "push-horizontal",
+    "instructions": [
+      "Set up in a high plank and place your hands close together under your chest so thumbs and index fingers form a diamond.",
+      "Brace your core and squeeze your glutes so your body forms a straight line from head to heels.",
+      "Bend your elbows to lower your chest toward your hands, keeping the elbows tracking back close to your sides.",
+      "Stop just before your chest touches your hands, then press back up by extending the elbows.",
+      "Lock out at the top without letting your hips sag or pike, then repeat."
+    ],
+    "formCues": [
+      "Keep elbows tucked toward your ribs, not flared out wide.",
+      "Maintain a rigid plank; do not let the hips drop or rise.",
+      "Drop to your knees to scale the movement if needed."
+    ],
+    "commonMistakes": [
+      "Flaring the elbows out, shifting load to the shoulders.",
+      "Letting the hips sag and overarching the lower back.",
+      "Cutting the depth short and skipping the stretch."
+    ],
+    "sets": "3",
+    "reps": "8-15"
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "id": "pull-up",
+    "name": "Pull-Up",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Latissimus dorsi", "Teres major"],
+    "secondaryMuscles": ["Biceps brachii", "Rhomboids", "Lower trapezius", "Posterior deltoid"],
+    "equipment": "Bodyweight",
+    "difficulty": "Advanced",
+    "animationType": "pull-vertical",
+    "instructions": [
+      "Grip a fixed bar with hands slightly wider than shoulder-width, palms facing away, and hang with arms fully extended.",
+      "Set the shoulders by pulling the shoulder blades down and back, and brace your core to stop the body from swinging.",
+      "Drive your elbows down toward your ribs and pull until your chin clears the bar.",
+      "Pause briefly at the top with the chest lifted toward the bar.",
+      "Lower under control until the arms are fully straight again, then repeat."
+    ],
+    "formCues": [
+      "Lead with the elbows, not the chin",
+      "Keep ribs down and core braced",
+      "Control the descent, no dropping"
+    ],
+    "commonMistakes": [
+      "Kipping or swinging to gain momentum",
+      "Using a partial range and not reaching a full hang"
+    ],
+    "sets": "3-4",
+    "reps": "6-12"
+  },
+  {
+    "id": "lat-pulldown",
+    "name": "Lat Pulldown",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Latissimus dorsi", "Teres major"],
+    "secondaryMuscles": ["Biceps brachii", "Rhomboids", "Lower trapezius"],
+    "equipment": "Cable",
+    "difficulty": "Beginner",
+    "animationType": "pull-vertical",
+    "instructions": [
+      "Sit at the machine and secure your thighs under the pads, then grip the bar slightly wider than shoulder-width.",
+      "Sit tall with a slight backward lean and lift the chest toward the bar.",
+      "Pull the bar down to your upper chest by driving your elbows down and back.",
+      "Squeeze the back at the bottom as the bar reaches the upper chest.",
+      "Let the bar rise under control until the arms are fully extended overhead, then repeat."
+    ],
+    "formCues": [
+      "Pull to the upper chest, not behind the neck",
+      "Drive elbows toward the floor",
+      "Keep a tall, stable torso"
+    ],
+    "commonMistakes": [
+      "Leaning back excessively and using bodyweight to yank the bar",
+      "Shrugging the shoulders up instead of pulling the elbows down"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "barbell-bent-over-row",
+    "name": "Barbell Bent-Over Row",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Latissimus dorsi", "Rhomboids", "Middle trapezius"],
+    "secondaryMuscles": ["Posterior deltoid", "Biceps brachii", "Erector spinae"],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "pull-horizontal",
+    "instructions": [
+      "Stand with feet hip-width apart and grip the barbell just outside your knees with an overhand grip.",
+      "Hinge at the hips until your torso is around 45 degrees, keeping a flat, neutral spine and soft knees.",
+      "Brace your core and pull the bar toward your lower ribs by driving your elbows back.",
+      "Squeeze the shoulder blades together at the top without raising your torso.",
+      "Lower the bar under control until the arms are straight, then repeat."
+    ],
+    "formCues": [
+      "Maintain a flat, neutral spine throughout",
+      "Pull to the lower ribs, elbows back",
+      "Keep the bar close to the body"
+    ],
+    "commonMistakes": [
+      "Rounding the lower back under load",
+      "Using momentum and standing up to heave the weight"
+    ],
+    "sets": "3-4",
+    "reps": "6-10"
+  },
+  {
+    "id": "single-arm-dumbbell-row",
+    "name": "Single-Arm Dumbbell Row",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Latissimus dorsi", "Rhomboids", "Middle trapezius"],
+    "secondaryMuscles": ["Posterior deltoid", "Biceps brachii", "Teres major"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "pull-horizontal",
+    "instructions": [
+      "Place one knee and the same-side hand on a flat bench, keeping your back flat and roughly parallel to the floor.",
+      "Let the dumbbell hang at arm's length from the free hand with the shoulder relaxed into a stretch.",
+      "Brace your core and pull the dumbbell toward your hip by driving your elbow up and back.",
+      "Squeeze the back at the top, keeping the torso square to the bench.",
+      "Lower the dumbbell under control to a full stretch, then repeat before switching sides."
+    ],
+    "formCues": [
+      "Keep the back flat and torso steady",
+      "Pull the elbow toward the hip",
+      "Avoid twisting the torso to lift"
+    ],
+    "commonMistakes": [
+      "Rotating the torso to swing the weight up",
+      "Shrugging the shoulder instead of rowing with the back"
+    ],
+    "sets": "3",
+    "reps": "8-12"
+  },
+  {
+    "id": "seated-cable-row",
+    "name": "Seated Cable Row",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Latissimus dorsi", "Rhomboids", "Middle trapezius"],
+    "secondaryMuscles": ["Posterior deltoid", "Biceps brachii", "Erector spinae"],
+    "equipment": "Cable",
+    "difficulty": "Beginner",
+    "animationType": "pull-horizontal",
+    "instructions": [
+      "Sit at the cable station with feet planted on the platform and knees slightly bent, gripping the handle.",
+      "Sit tall with a neutral spine and arms extended, allowing a slight stretch across the shoulder blades.",
+      "Pull the handle toward your lower abdomen by driving your elbows back and squeezing the shoulder blades together.",
+      "Hold briefly at the contraction with the chest up and torso upright.",
+      "Extend the arms under control back to the start without letting the lower back round, then repeat."
+    ],
+    "formCues": [
+      "Keep the chest tall and torso upright",
+      "Lead with the elbows, squeeze the blades",
+      "Control the stretch, don't let the back round"
+    ],
+    "commonMistakes": [
+      "Leaning far back and rowing with the lower back",
+      "Jerking the weight with a heaving torso"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "conventional-deadlift",
+    "name": "Conventional Deadlift",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Erector spinae", "Latissimus dorsi"],
+    "secondaryMuscles": ["Gluteus maximus", "Hamstrings", "Trapezius", "Quadriceps"],
+    "equipment": "Barbell",
+    "difficulty": "Advanced",
+    "animationType": "hinge",
+    "instructions": [
+      "Stand with feet hip-width apart and the barbell over your mid-foot, close to your shins.",
+      "Hinge at the hips and bend the knees to grip the bar just outside your legs, keeping a flat, neutral spine.",
+      "Take a breath, brace your core, and pull the slack out of the bar so your lats are tight.",
+      "Drive through your heels and extend the hips and knees together, keeping the bar close to your body.",
+      "Stand fully upright with shoulders back, then reverse the motion by hinging the hips and lowering the bar under control."
+    ],
+    "formCues": [
+      "Keep a flat, neutral spine throughout",
+      "Push the floor away and keep the bar against your legs",
+      "Lock out by squeezing the glutes, not leaning back"
+    ],
+    "commonMistakes": [
+      "Rounding the lower back during the lift",
+      "Letting the bar drift away from the body",
+      "Hyperextending the spine at lockout"
+    ],
+    "sets": "3-5",
+    "reps": "3-6"
+  },
+  {
+    "id": "dumbbell-pullover",
+    "name": "Dumbbell Pullover",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Latissimus dorsi", "Teres major"],
+    "secondaryMuscles": ["Pectoralis major", "Triceps brachii (long head)", "Serratus anterior"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "extension-overhead",
+    "instructions": [
+      "Lie on a flat bench and hold one dumbbell with both hands cupped under the top plate, arms extended over your chest.",
+      "Keep a slight bend in the elbows and brace your core with the ribs down.",
+      "Lower the dumbbell in an arc behind your head until you feel a stretch through the lats and chest.",
+      "Pull the dumbbell back over your chest by driving with the lats, keeping the elbow angle fixed.",
+      "Return to the start position over the chest, then repeat."
+    ],
+    "formCues": [
+      "Keep a fixed, slight elbow bend throughout",
+      "Feel the stretch through the lats, not the lower back",
+      "Keep ribs down and core braced"
+    ],
+    "commonMistakes": [
+      "Flaring the ribs and arching the lower back at the stretch",
+      "Bending and straightening the elbows like a triceps extension"
+    ],
+    "sets": "3",
+    "reps": "10-15"
+  },
+  {
+    "id": "dumbbell-shrug",
+    "name": "Dumbbell Shrug",
+    "muscleGroup": "Back",
+    "primaryMuscles": ["Upper trapezius"],
+    "secondaryMuscles": ["Levator scapulae", "Middle trapezius"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "shrug",
+    "instructions": [
+      "Stand tall with a dumbbell in each hand at your sides, arms straight and palms facing your thighs.",
+      "Brace your core and keep your chin level with the shoulders relaxed down to start.",
+      "Elevate the shoulders straight up toward your ears as high as possible.",
+      "Pause and squeeze the traps at the top of the movement.",
+      "Lower the shoulders under control to a full stretch, then repeat."
+    ],
+    "formCues": [
+      "Lift the shoulders straight up, not in circles",
+      "Pause and squeeze at the top",
+      "Keep the arms straight and relaxed"
+    ],
+    "commonMistakes": [
+      "Rolling the shoulders, which adds no benefit and stresses the joint",
+      "Using too much weight and barely moving the shoulders"
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  }
+]

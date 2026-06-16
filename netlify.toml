@@ -1,14 +1,15 @@
+# Netlify configuration — this is a static site, no build step required.
 [build]
   publish = "."
 
+# Never cache the service worker or manifest so updates roll out immediately.
 [[headers]]
-  for = "/*"
+  for = "/service-worker.js"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "no-cache, no-store, must-revalidate"
 
 [[headers]]
-  for = "/sw.js"
+  for = "/manifest.webmanifest"
   [headers.values]
     Cache-Control = "no-cache"
+    Content-Type = "application/manifest+json"

@@ -1,0 +1,250 @@
+[
+  {
+    "id": "barbell-back-squat",
+    "name": "Barbell Back Squat",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": ["Gluteus maximus", "Adductor magnus", "Erector spinae", "Hamstrings"],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "squat",
+    "instructions": [
+      "Set the barbell in a rack at upper-chest height, step under it, and rest it across your upper traps with hands gripped firmly just outside shoulder width.",
+      "Unrack by extending your knees and hips together, take two or three short steps back, and set your feet shoulder-width apart with toes turned out slightly.",
+      "Brace your core, keep your chest up, and descend by bending your hips and knees together until your thighs reach at least parallel to the floor.",
+      "Keep your knees tracking over your toes and your whole foot flat on the floor throughout the descent.",
+      "Drive through your whole foot to stand back up, extending your knees and hips until fully upright.",
+      "Re-brace and repeat for the prescribed reps, then walk the bar back into the rack to finish."
+    ],
+    "formCues": [
+      "Brace your core before every descent",
+      "Knees track over toes",
+      "Drive through mid-foot and heel",
+      "Keep chest tall and back neutral"
+    ],
+    "commonMistakes": [
+      "Letting the knees cave inward",
+      "Rounding the lower back at the bottom",
+      "Rising onto the toes and lifting the heels"
+    ],
+    "sets": "3-5",
+    "reps": "5-8"
+  },
+  {
+    "id": "barbell-front-squat",
+    "name": "Barbell Front Squat",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": ["Gluteus maximus", "Erector spinae", "Rectus abdominis"],
+    "equipment": "Barbell",
+    "difficulty": "Advanced",
+    "animationType": "squat",
+    "instructions": [
+      "Set the bar in a rack at upper-chest height and rest it across the front of your shoulders, on top of your front delts.",
+      "Secure the bar with a clean grip (fingers under the bar) or a crossed-arm grip, keeping your elbows pointed high and forward.",
+      "Unrack the bar, step back, and set your feet shoulder-width apart with toes turned out slightly.",
+      "Brace your core and descend by bending your knees and hips, keeping your torso as upright as possible until your thighs reach parallel.",
+      "Drive through your whole foot to stand tall, keeping your elbows high so the bar stays supported on your shoulders.",
+      "Re-brace and repeat for the prescribed reps, then return the bar to the rack to finish."
+    ],
+    "formCues": [
+      "Keep elbows high to support the bar",
+      "Stay upright through the torso",
+      "Brace hard to protect the spine",
+      "Knees track over toes"
+    ],
+    "commonMistakes": [
+      "Dropping the elbows so the bar rolls forward",
+      "Letting the torso pitch forward and the upper back round",
+      "Rising onto the toes and lifting the heels"
+    ],
+    "sets": "3-4",
+    "reps": "5-8"
+  },
+  {
+    "id": "dumbbell-goblet-squat",
+    "name": "Goblet Squat",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": ["Gluteus maximus", "Adductor magnus", "Rectus abdominis"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "squat",
+    "instructions": [
+      "Hold one dumbbell or kettlebell vertically against your chest, cupping the top head with both hands just under your chin.",
+      "Stand with your feet slightly wider than shoulder width and your toes turned out slightly.",
+      "Brace your core, keep your chest up, and point your elbows down.",
+      "Sit your hips back and down, bending your knees until your elbows reach the inside of your knees or your thighs are parallel.",
+      "Drive through your whole foot to stand back up to full height, keeping the weight tight against your chest.",
+      "Repeat for the prescribed reps."
+    ],
+    "formCues": [
+      "Hold the weight tight to your chest",
+      "Keep elbows pointing down",
+      "Sit between your hips, chest tall",
+      "Push knees out over toes"
+    ],
+    "commonMistakes": [
+      "Letting the chest collapse forward",
+      "Heels rising off the floor",
+      "Knees caving inward"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "machine-leg-press",
+    "name": "Leg Press",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": ["Gluteus maximus", "Hamstrings", "Adductor magnus"],
+    "equipment": "Machine",
+    "difficulty": "Beginner",
+    "animationType": "push-horizontal",
+    "instructions": [
+      "Sit in the leg press machine with your back and head flat against the pad and place your feet shoulder-width apart in the middle of the platform.",
+      "Release the safety handles and extend your legs to take the weight, keeping a slight bend in your knees rather than locking out hard.",
+      "Lower the platform by bending your knees toward your chest until they reach roughly 90 degrees, or until your lower back starts to lift off the pad.",
+      "Keep your knees tracking in line with your toes and your hips planted on the seat throughout.",
+      "Press through your whole foot to extend your legs back to the start without slamming into a hard lockout.",
+      "Repeat for the prescribed reps, then re-engage the safety handles to finish."
+    ],
+    "formCues": [
+      "Keep your lower back flat on the pad",
+      "Don't lock the knees aggressively",
+      "Knees track in line with toes",
+      "Push through the whole foot"
+    ],
+    "commonMistakes": [
+      "Lowering so deep the hips and lower back round off the pad",
+      "Locking out the knees forcefully",
+      "Letting the knees cave inward"
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  },
+  {
+    "id": "machine-leg-extension",
+    "name": "Leg Extension",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": [],
+    "equipment": "Machine",
+    "difficulty": "Beginner",
+    "animationType": "extension-overhead",
+    "instructions": [
+      "Sit on the machine with your back against the pad and adjust the seat so your knees line up with the machine's pivot point.",
+      "Position the shin pad just above your ankles and grip the handles at your sides.",
+      "Brace and extend your knees to lift the pad, straightening your legs under control.",
+      "Pause briefly at the top with your quads fully contracted, without snapping into a hard lockout.",
+      "Lower the weight slowly under control until your knees return to about 90 degrees.",
+      "Repeat for the prescribed reps."
+    ],
+    "formCues": [
+      "Align knees with the machine pivot",
+      "Control the lowering phase",
+      "Squeeze the quads at the top",
+      "Keep hips planted on the seat"
+    ],
+    "commonMistakes": [
+      "Using momentum to swing the weight up",
+      "Snapping into a violent lockout",
+      "Letting the weight drop quickly on the way down"
+    ],
+    "sets": "3-4",
+    "reps": "12-15"
+  },
+  {
+    "id": "dumbbell-walking-lunge",
+    "name": "Walking Lunge",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": ["Gluteus maximus", "Hamstrings", "Adductor magnus", "Gastrocnemius"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "lunge",
+    "instructions": [
+      "Stand tall holding a dumbbell in each hand at your sides, feet hip-width apart and core braced.",
+      "Take a controlled step forward with one leg, landing on your whole foot.",
+      "Lower your body by bending both knees until your back knee nearly touches the floor and your front thigh is about parallel.",
+      "Keep your torso upright and your front knee tracking over your toes rather than collapsing inward.",
+      "Drive through your front foot to bring your back leg forward into the next step, alternating legs as you walk.",
+      "Continue for the prescribed reps per leg, keeping each step controlled."
+    ],
+    "formCues": [
+      "Keep your torso tall and core braced",
+      "Front knee tracks over the toes",
+      "Lower the back knee under control",
+      "Drive through the front foot to stand"
+    ],
+    "commonMistakes": [
+      "Letting the front knee cave inward",
+      "Leaning the torso too far forward",
+      "Taking too short a step so the knee shoots past the toes"
+    ],
+    "sets": "3-4",
+    "reps": "10-12 per leg"
+  },
+  {
+    "id": "dumbbell-bulgarian-split-squat",
+    "name": "Bulgarian Split Squat",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": ["Gluteus maximus", "Adductor magnus", "Hamstrings"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "lunge",
+    "instructions": [
+      "Stand a couple of feet in front of a bench, holding a dumbbell in each hand at your sides.",
+      "Place the top of one foot behind you on the bench, with your front foot planted far enough forward that your shin stays near vertical at the bottom.",
+      "Brace your core and keep your torso tall with a slight forward lean.",
+      "Lower yourself by bending your front knee until your front thigh reaches about parallel and your back knee drops toward the floor.",
+      "Drive through your front foot to return to the start, keeping the front knee tracking over your toes.",
+      "Complete all reps on one leg, then switch sides."
+    ],
+    "formCues": [
+      "Keep the front shin near vertical",
+      "Keep most of the weight on the front foot",
+      "Brace your core and stay tall",
+      "Control the descent"
+    ],
+    "commonMistakes": [
+      "Placing the front foot too close so the knee drifts far past the toes",
+      "Pushing off the back foot instead of loading the front leg",
+      "Letting the front knee collapse inward"
+    ],
+    "sets": "3-4",
+    "reps": "8-12 per leg"
+  },
+  {
+    "id": "dumbbell-step-up",
+    "name": "Step-Up",
+    "muscleGroup": "Quadriceps",
+    "primaryMuscles": ["Rectus femoris", "Vastus lateralis", "Vastus medialis", "Vastus intermedius"],
+    "secondaryMuscles": ["Gluteus maximus", "Hamstrings", "Gastrocnemius"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "lunge",
+    "instructions": [
+      "Stand facing a sturdy box or bench of about knee height, holding a dumbbell in each hand at your sides.",
+      "Place one whole foot flat on top of the box with your shin roughly vertical.",
+      "Brace your core and drive through the heel of the top foot to stand fully upright on the box, bringing the trailing foot up.",
+      "Let the top leg do the work; avoid pushing off the floor with the bottom foot.",
+      "Step back down under control with the same lead leg, returning to the floor softly.",
+      "Complete the prescribed reps, then switch your lead leg."
+    ],
+    "formCues": [
+      "Drive through the heel of the top foot",
+      "Keep your torso tall and core braced",
+      "Control the step down",
+      "Place the full foot on the box"
+    ],
+    "commonMistakes": [
+      "Pushing off the bottom foot for momentum",
+      "Using a box so high the knee passes well past the toes",
+      "Dropping down uncontrolled instead of lowering"
+    ],
+    "sets": "3-4",
+    "reps": "8-12 per leg"
+  }
+]

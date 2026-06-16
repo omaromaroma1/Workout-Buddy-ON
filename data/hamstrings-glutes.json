@@ -1,0 +1,245 @@
+[
+  {
+    "id": "romanian-deadlift",
+    "name": "Romanian Deadlift (RDL)",
+    "muscleGroup": "Hamstrings & Glutes",
+    "primaryMuscles": [
+      "Hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+      "Gluteus maximus"
+    ],
+    "secondaryMuscles": [
+      "Erector spinae",
+      "Adductor magnus",
+      "Latissimus dorsi (isometric stabilizer)"
+    ],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "hinge",
+    "instructions": [
+      "Stand tall holding a barbell at hip height with a shoulder-width overhand grip, feet hip-width apart and knees softly unlocked.",
+      "Brace your core and pull your shoulder blades down and back to set a neutral spine.",
+      "Push your hips straight back and let the bar travel down close to your thighs, keeping a slight, fixed knee bend.",
+      "Lower until you feel a strong stretch in the hamstrings (usually mid-shin to just below the knees) without rounding your lower back.",
+      "Drive your hips forward and squeeze your glutes to return to standing, finishing tall without leaning back."
+    ],
+    "formCues": [
+      "Lead with the hips, not the knees — it's a hinge, not a squat.",
+      "Keep the bar dragging close to your legs the whole way.",
+      "Maintain a flat, neutral spine and a proud chest."
+    ],
+    "commonMistakes": [
+      "Rounding the lower back at the bottom.",
+      "Turning it into a squat by bending the knees too much.",
+      "Letting the bar drift away from the body."
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "lying-leg-curl",
+    "name": "Lying Leg Curl",
+    "muscleGroup": "Hamstrings & Glutes",
+    "primaryMuscles": [
+      "Hamstrings (biceps femoris, semitendinosus, semimembranosus)"
+    ],
+    "secondaryMuscles": [
+      "Gastrocnemius",
+      "Popliteus"
+    ],
+    "equipment": "Machine",
+    "difficulty": "Beginner",
+    "animationType": "curl",
+    "instructions": [
+      "Lie face down on the machine and set the ankle pad just above the back of your heels, against the lower calf.",
+      "Align your knees with the machine's pivot point and grip the handles to keep your torso stable.",
+      "Curl your heels toward your glutes by contracting the hamstrings, keeping your hips pressed into the pad.",
+      "Squeeze hard at the top without letting your hips lift off the bench.",
+      "Lower under control back to the start with a slight stretch, avoiding a sudden drop."
+    ],
+    "formCues": [
+      "Keep hips and pelvis pinned to the pad.",
+      "Control the negative — don't let the weight crash down.",
+      "Pause and squeeze at peak contraction."
+    ],
+    "commonMistakes": [
+      "Lifting the hips to cheat the weight up.",
+      "Using momentum instead of muscular control.",
+      "Setting the ankle pad too high on the calf."
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  },
+  {
+    "id": "seated-leg-curl",
+    "name": "Seated Leg Curl",
+    "muscleGroup": "Hamstrings & Glutes",
+    "primaryMuscles": [
+      "Hamstrings (biceps femoris, semitendinosus, semimembranosus)"
+    ],
+    "secondaryMuscles": [
+      "Gastrocnemius",
+      "Popliteus"
+    ],
+    "equipment": "Machine",
+    "difficulty": "Beginner",
+    "animationType": "curl",
+    "instructions": [
+      "Adjust the seat so your knees line up with the machine's pivot and the back pad supports your spine.",
+      "Place the lower-leg pad just above your heels and secure the thigh pad snugly over your quads.",
+      "Grip the handles and brace, then curl your heels down and back underneath the seat.",
+      "Drive to full knee flexion and squeeze your hamstrings hard.",
+      "Return slowly to the starting position, controlling the stretch without letting the knees snap straight."
+    ],
+    "formCues": [
+      "Keep the thigh pad tight so your legs don't lift.",
+      "Drive through the heels, not the toes.",
+      "Emphasize a slow, controlled negative."
+    ],
+    "commonMistakes": [
+      "Bouncing out of the bottom with momentum.",
+      "Pointing the toes hard and cramping the calves.",
+      "Partial range — not curling all the way down."
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  },
+  {
+    "id": "barbell-hip-thrust",
+    "name": "Barbell Hip Thrust",
+    "muscleGroup": "Hamstrings & Glutes",
+    "primaryMuscles": [
+      "Gluteus maximus"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Quadriceps",
+      "Adductor magnus"
+    ],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "hinge",
+    "instructions": [
+      "Sit on the floor with your shoulder blades resting against a bench and a padded barbell over your hips.",
+      "Plant your feet flat about hip-width apart, positioned so your shins will be vertical at the top of the movement.",
+      "Brace your core, tuck your chin slightly, and drive through your heels to extend your hips upward.",
+      "Push until your torso and thighs form a straight line, squeezing your glutes hard at the top.",
+      "Lower your hips under control back toward the floor and repeat without bouncing the bar off the ground."
+    ],
+    "formCues": [
+      "Finish with a full glute squeeze and a flat back — don't overarch the lower back.",
+      "Keep your chin tucked and ribs down to stay neutral.",
+      "Drive through the heels, shins vertical at lockout."
+    ],
+    "commonMistakes": [
+      "Hyperextending the lower back instead of finishing with the glutes.",
+      "Placing feet too far forward, shifting load to the hamstrings.",
+      "Cutting the range short and not reaching full hip extension."
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "glute-bridge",
+    "name": "Glute Bridge",
+    "muscleGroup": "Hamstrings & Glutes",
+    "primaryMuscles": [
+      "Gluteus maximus"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Erector spinae",
+      "Transverse abdominis"
+    ],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "animationType": "hinge",
+    "instructions": [
+      "Lie on your back with knees bent, feet flat on the floor about hip-width apart and close to your glutes.",
+      "Rest your arms at your sides and press your lower back gently into the floor to brace.",
+      "Drive through your heels and lift your hips until your body forms a straight line from knees to shoulders.",
+      "Squeeze your glutes firmly at the top for a brief pause.",
+      "Lower your hips under control back to the floor and repeat."
+    ],
+    "formCues": [
+      "Squeeze the glutes to lift, not the lower back.",
+      "Keep ribs down and avoid arching at the top.",
+      "Drive through the heels, not the toes."
+    ],
+    "commonMistakes": [
+      "Overarching the lumbar spine instead of extending the hips.",
+      "Placing feet too far away, recruiting hamstrings over glutes.",
+      "Rushing reps without a top-end squeeze."
+    ],
+    "sets": "3",
+    "reps": "12-20"
+  },
+  {
+    "id": "barbell-good-morning",
+    "name": "Barbell Good Morning",
+    "muscleGroup": "Hamstrings & Glutes",
+    "primaryMuscles": [
+      "Hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+      "Gluteus maximus"
+    ],
+    "secondaryMuscles": [
+      "Erector spinae",
+      "Adductor magnus"
+    ],
+    "equipment": "Barbell",
+    "difficulty": "Advanced",
+    "animationType": "hinge",
+    "instructions": [
+      "Set a barbell across your upper traps as in a back squat, feet shoulder-width apart with knees softly bent.",
+      "Brace your core hard and set a neutral, flat spine before moving.",
+      "Hinge at the hips, pushing your glutes back as your torso tips forward toward parallel with the floor.",
+      "Lower only as far as you can keep a flat back and feel a hamstring stretch — do not round your spine.",
+      "Drive your hips forward and squeeze your glutes to return your torso to upright."
+    ],
+    "formCues": [
+      "Keep the movement at the hips with a fixed knee angle.",
+      "Maintain a rigid, neutral spine throughout.",
+      "Use light weight and prioritize control over load."
+    ],
+    "commonMistakes": [
+      "Rounding the back under load (high injury risk).",
+      "Bending the knees and turning it into a squat.",
+      "Going too heavy too soon."
+    ],
+    "sets": "3",
+    "reps": "8-12"
+  },
+  {
+    "id": "cable-glute-kickback",
+    "name": "Cable Glute Kickback",
+    "muscleGroup": "Hamstrings & Glutes",
+    "primaryMuscles": [
+      "Gluteus maximus"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings",
+      "Gluteus medius"
+    ],
+    "equipment": "Cable",
+    "difficulty": "Beginner",
+    "animationType": "leg-raise",
+    "instructions": [
+      "Attach an ankle cuff to a low cable pulley and secure it around one ankle.",
+      "Face the machine, hold the frame for support, and hinge slightly forward at the hips with a tall, neutral spine.",
+      "Keeping a slight bend in the working knee, drive that leg straight back by squeezing the glute.",
+      "Extend until your hip is fully behind you and pause to squeeze at the top.",
+      "Return the leg forward under control without letting the weight stack slam, then repeat before switching sides."
+    ],
+    "formCues": [
+      "Lead the motion with the glute, not the lower back.",
+      "Keep the torso stable and avoid arching to gain range.",
+      "Pause and squeeze at full hip extension."
+    ],
+    "commonMistakes": [
+      "Swinging the leg with momentum instead of controlled extension.",
+      "Arching the lower back to fake a bigger range.",
+      "Rotating the hips open rather than driving straight back."
+    ],
+    "sets": "3",
+    "reps": "12-15"
+  }
+]

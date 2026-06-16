@@ -1,0 +1,205 @@
+[
+  {
+    "id": "standing-calf-raise-machine",
+    "name": "Standing Calf Raise (Machine)",
+    "muscleGroup": "Calves",
+    "primaryMuscles": ["Gastrocnemius"],
+    "secondaryMuscles": ["Soleus"],
+    "equipment": "Machine",
+    "difficulty": "Beginner",
+    "animationType": "calf-raise",
+    "instructions": [
+      "Set the shoulder pads so you can stand tall with a slight knee bend, then place the balls of your feet on the platform edge with your heels hanging free.",
+      "Stand up to load the pads onto your shoulders, brace your core, and keep your legs nearly straight.",
+      "Lower your heels slowly below the platform until you feel a deep stretch in your calves.",
+      "Drive through the balls of your feet to rise as high as possible onto your toes.",
+      "Pause and squeeze at the top, then lower under control into the next rep."
+    ],
+    "formCues": [
+      "Keep knees nearly straight to bias the gastrocnemius",
+      "Use a full range: deep stretch at the bottom, full contraction at the top",
+      "Control the descent and avoid bouncing"
+    ],
+    "commonMistakes": [
+      "Bouncing out of the bottom using the tendon rather than the muscle",
+      "Cutting the range of motion short at the top or bottom",
+      "Bending the knees to heave the weight up"
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  },
+  {
+    "id": "seated-calf-raise-machine",
+    "name": "Seated Calf Raise (Machine)",
+    "muscleGroup": "Calves",
+    "primaryMuscles": ["Soleus"],
+    "secondaryMuscles": ["Gastrocnemius"],
+    "equipment": "Machine",
+    "difficulty": "Beginner",
+    "animationType": "calf-raise",
+    "instructions": [
+      "Sit in the machine and place the balls of your feet on the platform with your knees bent about 90 degrees under the pads.",
+      "Adjust the thigh pads snugly over your lower thighs and release the safety lever.",
+      "Lower your heels toward the floor until you feel a strong stretch in your calves.",
+      "Press up through the balls of your feet, lifting your heels as high as possible.",
+      "Squeeze briefly at the top, then lower slowly and under control."
+    ],
+    "formCues": [
+      "Bent knees shift emphasis to the soleus",
+      "Move only at the ankles and keep the thighs still",
+      "Pause at peak contraction on every rep"
+    ],
+    "commonMistakes": [
+      "Using momentum or bouncing through reps",
+      "Cutting the range short at the bottom",
+      "Loading too heavy and shortening the stretch"
+    ],
+    "sets": "3-4",
+    "reps": "12-20"
+  },
+  {
+    "id": "leg-press-calf-raise",
+    "name": "Leg Press Calf Raise",
+    "muscleGroup": "Calves",
+    "primaryMuscles": ["Gastrocnemius"],
+    "secondaryMuscles": ["Soleus"],
+    "equipment": "Machine",
+    "difficulty": "Intermediate",
+    "animationType": "calf-raise",
+    "instructions": [
+      "Sit in the leg press and place the balls of your feet low on the platform with heels hanging off the edge and legs nearly straight but knees unlocked.",
+      "Release the safety handles and support the weight on the balls of your feet.",
+      "Let your toes flex back slowly, lowering the platform until you feel a deep calf stretch.",
+      "Extend your ankles to push the platform away, pressing through the balls of your feet.",
+      "Pause at full extension, then lower under control into the next rep."
+    ],
+    "formCues": [
+      "Keep knees nearly straight, never locked, throughout",
+      "Press through the balls of the feet, not the whole foot",
+      "Keep a controlled tempo with no rapid bouncing"
+    ],
+    "commonMistakes": [
+      "Locking the knees and straining the joint",
+      "Letting the platform drop fast and out of control",
+      "Placing the feet too high so the heels cannot drop for a stretch"
+    ],
+    "sets": "3-4",
+    "reps": "12-15"
+  },
+  {
+    "id": "standing-dumbbell-calf-raise",
+    "name": "Standing Dumbbell Calf Raise",
+    "muscleGroup": "Calves",
+    "primaryMuscles": ["Gastrocnemius"],
+    "secondaryMuscles": ["Soleus"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "calf-raise",
+    "instructions": [
+      "Stand with the balls of your feet on a step or weight plate, holding a dumbbell in one or both hands at your sides.",
+      "Stand tall with legs straight, core braced, and heels hanging off the edge.",
+      "Lower your heels toward the floor until you feel a full stretch in your calves.",
+      "Drive up onto the balls of your feet, raising your heels as high as you can.",
+      "Squeeze at the top, then lower slowly into the next rep."
+    ],
+    "formCues": [
+      "Keep legs straight to target the gastrocnemius",
+      "Use a step or plate for a fuller stretch at the bottom",
+      "Lightly touch a wall for balance if needed"
+    ],
+    "commonMistakes": [
+      "Bouncing instead of controlling each rep",
+      "Using a short range of motion at the top and bottom",
+      "Rolling the ankles outward instead of pressing straight up"
+    ],
+    "sets": "3-4",
+    "reps": "12-20"
+  },
+  {
+    "id": "single-leg-calf-raise",
+    "name": "Single-Leg Calf Raise",
+    "muscleGroup": "Calves",
+    "primaryMuscles": ["Gastrocnemius"],
+    "secondaryMuscles": ["Soleus"],
+    "equipment": "Bodyweight",
+    "difficulty": "Intermediate",
+    "animationType": "calf-raise",
+    "instructions": [
+      "Stand on one foot with the ball of that foot on a step or raised surface and the heel hanging free.",
+      "Hold a wall or rail lightly for balance and hook the non-working foot behind your working ankle.",
+      "Lower your heel below the step until you feel a deep stretch in the calf.",
+      "Press up onto the ball of your foot, lifting your heel as high as possible.",
+      "Pause at the top, lower under control, and finish all reps before switching legs."
+    ],
+    "formCues": [
+      "Use the rail only for balance, not to assist the lift",
+      "Keep the working knee straight but not locked",
+      "Aim for a full stretch and full contraction each rep"
+    ],
+    "commonMistakes": [
+      "Pulling on the rail to help raise the body",
+      "Rushing reps and losing the stretch",
+      "Letting the ankle roll inward or outward"
+    ],
+    "sets": "3",
+    "reps": "10-15 each leg"
+  },
+  {
+    "id": "donkey-calf-raise",
+    "name": "Donkey Calf Raise",
+    "muscleGroup": "Calves",
+    "primaryMuscles": ["Gastrocnemius"],
+    "secondaryMuscles": ["Soleus"],
+    "equipment": "Machine",
+    "difficulty": "Intermediate",
+    "animationType": "calf-raise",
+    "instructions": [
+      "Place the balls of your feet on the platform of a donkey calf raise machine with heels hanging off, hinge at the hips to about 90 degrees, and settle the pad across your hips or lower back.",
+      "Hold the front support, keep your legs nearly straight, and brace your core.",
+      "Lower your heels toward the floor until you feel a deep stretch in your calves.",
+      "Press up through the balls of your feet, raising your heels as high as possible.",
+      "Squeeze at the top, then lower slowly and under control."
+    ],
+    "formCues": [
+      "Hinge at the hips to load the gastrocnemius under stretch",
+      "Keep knees nearly straight throughout",
+      "Emphasize a slow, controlled stretch at the bottom"
+    ],
+    "commonMistakes": [
+      "Bending the knees to push the weight",
+      "Bouncing out of the bottom position",
+      "Rounding the lower back instead of hinging at the hips"
+    ],
+    "sets": "3-4",
+    "reps": "12-15"
+  },
+  {
+    "id": "smith-machine-calf-raise",
+    "name": "Smith Machine Standing Calf Raise",
+    "muscleGroup": "Calves",
+    "primaryMuscles": ["Gastrocnemius"],
+    "secondaryMuscles": ["Soleus"],
+    "equipment": "Machine",
+    "difficulty": "Intermediate",
+    "animationType": "calf-raise",
+    "instructions": [
+      "Set a weight plate or sturdy block under the bar and stand with the balls of your feet on it, heels hanging off.",
+      "Position the Smith machine bar across your upper traps and unrack it by rotating the hooks free.",
+      "Stand tall with legs nearly straight, then lower your heels until you feel a full calf stretch.",
+      "Press up through the balls of your feet, lifting your heels as high as possible.",
+      "Pause and squeeze at the top, then lower under control into the next rep."
+    ],
+    "formCues": [
+      "Use a plate or block under the toes for a full range of motion",
+      "Rest the bar on the traps, not the neck",
+      "Drive straight up without bending the knees"
+    ],
+    "commonMistakes": [
+      "Skipping the toe block and losing the stretch",
+      "Bending the knees to assist the lift",
+      "Bouncing at the bottom instead of controlling the stretch"
+    ],
+    "sets": "3-4",
+    "reps": "10-15"
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "barbell-overhead-press",
+    "name": "Barbell Overhead Press (Military Press)",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Anterior deltoid", "Lateral deltoid"],
+    "secondaryMuscles": ["Triceps brachii", "Upper trapezius", "Serratus anterior"],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "push-vertical",
+    "instructions": [
+      "Set the bar in a rack at upper-chest height and grip it just outside shoulder width with knuckles facing up.",
+      "Unrack the bar so it rests on your front delts, brace your core, squeeze your glutes, and stand with feet about hip-width apart.",
+      "Tuck your chin slightly and press the bar straight up, moving your head back out of the path as the bar passes your face.",
+      "Lock out with the bar stacked over your mid-foot and ears, pushing your head 'through' the window so your biceps finish near your ears.",
+      "Lower the bar under control back to the front of your shoulders and reset before the next rep."
+    ],
+    "formCues": [
+      "Keep your core braced and ribs down to avoid leaning back",
+      "Squeeze your glutes to protect the lower back",
+      "Drive the bar in a straight vertical line over mid-foot"
+    ],
+    "commonMistakes": [
+      "Excessive lower-back arch from flaring the ribs up and leaning backward",
+      "Pressing the bar forward instead of straight up",
+      "Letting the bar drift away from the face on the way up"
+    ],
+    "sets": "3-5",
+    "reps": "5-8"
+  },
+  {
+    "id": "dumbbell-shoulder-press",
+    "name": "Seated Dumbbell Shoulder Press",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Anterior deltoid", "Lateral deltoid"],
+    "secondaryMuscles": ["Triceps brachii", "Upper trapezius"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "push-vertical",
+    "instructions": [
+      "Sit on a bench with an upright back support and rest a dumbbell on each thigh.",
+      "Kick the dumbbells up to shoulder height so they sit just outside your shoulders, palms facing forward.",
+      "Brace your core and press both dumbbells up and slightly inward until your arms are nearly straight overhead.",
+      "Pause briefly at the top without locking out aggressively or clanking the weights together.",
+      "Lower the dumbbells under control back to shoulder level and repeat."
+    ],
+    "formCues": [
+      "Keep wrists stacked over elbows throughout",
+      "Press up and slightly in, not straight out wide",
+      "Keep your back against the pad and avoid arching"
+    ],
+    "commonMistakes": [
+      "Arching the lower back off the bench to push heavier weight",
+      "Letting the elbows drift too far behind the body at the bottom",
+      "Using momentum or a partial range of motion"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "arnold-press",
+    "name": "Seated Arnold Press",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Anterior deltoid", "Lateral deltoid"],
+    "secondaryMuscles": ["Posterior deltoid", "Triceps brachii", "Upper trapezius"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "push-vertical",
+    "instructions": [
+      "Sit on a bench with back support and hold a dumbbell in each hand at shoulder height, palms facing toward you with elbows in front of your chest.",
+      "Brace your core, then press up while rotating your palms outward so they face forward as the dumbbells rise.",
+      "Continue pressing until your arms are nearly extended overhead with palms facing away from you.",
+      "Reverse the motion smoothly, rotating your palms back toward your face as you lower to the start.",
+      "Control the descent fully before beginning the next rep."
+    ],
+    "formCues": [
+      "Rotate the wrists smoothly and continuously with the press",
+      "Keep the tempo controlled, not jerky",
+      "Keep your core braced and back against the pad"
+    ],
+    "commonMistakes": [
+      "Rotating the wrists too fast or out of sync with the press",
+      "Using excessive weight that breaks form and strains the shoulder",
+      "Flaring the elbows aggressively and stressing the rotator cuff"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "dumbbell-lateral-raise",
+    "name": "Dumbbell Lateral Raise",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Lateral deltoid"],
+    "secondaryMuscles": ["Anterior deltoid", "Supraspinatus", "Upper trapezius"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "lateral-raise",
+    "instructions": [
+      "Stand tall holding a dumbbell in each hand at your sides, palms facing in, with a slight bend in the elbows.",
+      "Brace your core, keep a tall chest, and soften your knees.",
+      "Raise both dumbbells out to the sides, leading with your elbows, until your arms reach about shoulder height.",
+      "Pause briefly at the top with your wrists no higher than your elbows, then lower under control.",
+      "Resist the weight all the way down before starting the next rep."
+    ],
+    "formCues": [
+      "Lead with the elbows, keeping a fixed soft bend",
+      "Stop at shoulder height and don't shrug past it",
+      "Control the lowering phase with no swinging"
+    ],
+    "commonMistakes": [
+      "Using momentum and swinging the torso to lift the weight",
+      "Shrugging the traps and raising the arms above shoulder level",
+      "Going too heavy and turning it into an upright-row motion"
+    ],
+    "sets": "3-4",
+    "reps": "12-15"
+  },
+  {
+    "id": "dumbbell-front-raise",
+    "name": "Dumbbell Front Raise",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Anterior deltoid"],
+    "secondaryMuscles": ["Lateral deltoid", "Upper pectoralis major", "Serratus anterior"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "front-raise",
+    "instructions": [
+      "Stand tall with a dumbbell in each hand resting in front of your thighs, palms facing your body.",
+      "Brace your core, keep a tall posture, and hold a slight bend in the elbows.",
+      "Raise one or both dumbbells straight in front of you until your arms reach about shoulder height.",
+      "Pause briefly at the top, keeping the movement smooth and controlled.",
+      "Lower the dumbbells back to your thighs under control and repeat."
+    ],
+    "formCues": [
+      "Keep the elbows slightly bent and fixed",
+      "Raise only to shoulder height, no higher",
+      "Avoid leaning back to heave the weight up"
+    ],
+    "commonMistakes": [
+      "Swinging the torso and using momentum",
+      "Lifting the dumbbells well above shoulder height",
+      "Shrugging the shoulders at the top of the rep"
+    ],
+    "sets": "3",
+    "reps": "10-15"
+  },
+  {
+    "id": "rear-delt-fly",
+    "name": "Bent-Over Dumbbell Rear Delt Fly",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Posterior deltoid"],
+    "secondaryMuscles": ["Rhomboids", "Middle trapezius", "Infraspinatus"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "fly",
+    "instructions": [
+      "Hold a dumbbell in each hand and hinge forward at the hips until your torso is close to parallel with the floor, keeping your back flat.",
+      "Let the dumbbells hang beneath your shoulders with palms facing each other and a slight bend in the elbows.",
+      "Brace your core, then raise the dumbbells out to the sides by squeezing your shoulder blades and rear delts.",
+      "Lift until your arms are roughly in line with your torso, leading with the elbows.",
+      "Lower the dumbbells under control back to the start and repeat without rounding the back."
+    ],
+    "formCues": [
+      "Keep a flat back and braced core throughout the hinge",
+      "Lead with the elbows and squeeze the shoulder blades",
+      "Use a light weight and focus on the rear delt contraction"
+    ],
+    "commonMistakes": [
+      "Rounding the lower back during the hinge",
+      "Using too much weight and turning it into a row with the traps",
+      "Jerking the weights up with momentum instead of controlled raises"
+    ],
+    "sets": "3-4",
+    "reps": "12-15"
+  },
+  {
+    "id": "cable-lateral-raise",
+    "name": "Cable Lateral Raise",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Lateral deltoid"],
+    "secondaryMuscles": ["Anterior deltoid", "Supraspinatus", "Upper trapezius"],
+    "equipment": "Cable",
+    "difficulty": "Intermediate",
+    "animationType": "lateral-raise",
+    "instructions": [
+      "Set a cable pulley to the lowest position and stand side-on to the machine, gripping the handle with the hand farthest from the stack.",
+      "Let the working arm cross slightly in front of your body with a soft bend in the elbow, and brace your core.",
+      "Raise your arm out to the side, leading with the elbow, until it reaches about shoulder height.",
+      "Pause briefly at the top, keeping tension on the lateral delt, then lower under control against the cable.",
+      "Finish all reps, then turn around and repeat on the other side."
+    ],
+    "formCues": [
+      "Lead with the elbow and keep the bend fixed",
+      "Let the cable pull the arm down slowly for constant tension",
+      "Stay tall and avoid leaning away from the stack"
+    ],
+    "commonMistakes": [
+      "Leaning hard away from the machine to swing the weight up",
+      "Shrugging the trap and raising the arm above shoulder height",
+      "Letting the weight stack slam down between reps"
+    ],
+    "sets": "3-4",
+    "reps": "12-15"
+  },
+  {
+    "id": "dumbbell-upright-row",
+    "name": "Dumbbell Upright Row",
+    "muscleGroup": "Shoulders",
+    "primaryMuscles": ["Lateral deltoid", "Upper trapezius"],
+    "secondaryMuscles": ["Anterior deltoid", "Biceps brachii"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "pull-vertical",
+    "instructions": [
+      "Stand tall holding a dumbbell in each hand in front of your thighs, palms facing your body, hands about shoulder-width apart.",
+      "Brace your core, lift your chest, and set your shoulders down to start.",
+      "Pull the dumbbells straight up close to your body by raising your elbows out and up.",
+      "Stop when your upper arms reach about shoulder height, keeping your elbows level with or slightly below your wrists.",
+      "Lower the dumbbells under control back to your thighs and repeat."
+    ],
+    "formCues": [
+      "Lead with the elbows and keep the weights close to the body",
+      "Do not raise the elbows above shoulder height, to protect the shoulder joint",
+      "Keep your wrists relaxed and at or below elbow level"
+    ],
+    "commonMistakes": [
+      "Pulling the elbows up too high, risking shoulder impingement",
+      "Using a stance that is too narrow and overloading the wrists",
+      "Heaving with the lower back instead of a controlled pull"
+    ],
+    "sets": "3",
+    "reps": "10-12"
+  }
+]

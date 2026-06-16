@@ -1,0 +1,234 @@
+[
+  {
+    "id": "barbell-bench-press",
+    "name": "Barbell Bench Press",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (sternal head)"],
+    "secondaryMuscles": ["Anterior deltoid", "Triceps brachii"],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "push-horizontal",
+    "instructions": [
+      "Lie flat on the bench with your eyes under the bar, feet planted on the floor, and a slight natural arch in your lower back.",
+      "Grip the bar slightly wider than shoulder width, retract your shoulder blades, and unrack the bar so it sits over your chest with arms extended.",
+      "Lower the bar under control to your mid-chest (around the nipple line), keeping your elbows tucked at roughly a 45 to 75 degree angle to your torso.",
+      "Touch the chest lightly without bouncing, then press the bar back up and slightly toward your face until your arms are fully extended.",
+      "Lock out the rep, reset your breath, and repeat. Use a spotter or safety pins for heavy sets."
+    ],
+    "formCues": [
+      "Keep your shoulder blades pinched and chest up throughout",
+      "Drive your feet into the floor for full-body tension",
+      "Wrap your thumb around the bar (no suicide grip)"
+    ],
+    "commonMistakes": [
+      "Bouncing the bar off the chest",
+      "Flaring the elbows out to 90 degrees and stressing the shoulders",
+      "Lifting the hips off the bench to cheat the weight up"
+    ],
+    "sets": "3-5",
+    "reps": "5-10"
+  },
+  {
+    "id": "incline-barbell-bench-press",
+    "name": "Incline Barbell Bench Press",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (clavicular head)"],
+    "secondaryMuscles": ["Anterior deltoid", "Triceps brachii"],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "animationType": "push-vertical",
+    "instructions": [
+      "Set an adjustable bench to roughly a 30 to 45 degree incline and lie back with your eyes under the bar and feet flat on the floor.",
+      "Grip the bar slightly wider than shoulder width, retract your shoulder blades, and unrack the bar over your upper chest.",
+      "Lower the bar under control to the top of your chest, just below the collarbone, keeping your elbows moderately tucked.",
+      "Lightly touch the chest, then press the bar up and back toward your face until your arms are fully extended.",
+      "Lock out, reset, and repeat for the prescribed reps with a spotter for heavy loads."
+    ],
+    "formCues": [
+      "Keep the bench angle moderate to bias the upper chest over the front delts",
+      "Maintain retracted shoulder blades and a proud chest",
+      "Press in a slight backward arc, not straight up over the shoulders"
+    ],
+    "commonMistakes": [
+      "Setting the incline too steep, turning it into a shoulder press",
+      "Lowering the bar too high onto the throat or neck",
+      "Letting the elbows flare excessively"
+    ],
+    "sets": "3-4",
+    "reps": "6-12"
+  },
+  {
+    "id": "dumbbell-bench-press",
+    "name": "Dumbbell Bench Press",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (sternal head)"],
+    "secondaryMuscles": ["Anterior deltoid", "Triceps brachii"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "push-horizontal",
+    "instructions": [
+      "Sit on the end of a flat bench with a dumbbell resting on each thigh, then lie back, using your thighs to kick the dumbbells up to chest level.",
+      "Position the dumbbells at the sides of your chest with palms facing forward, shoulder blades retracted, and feet flat on the floor.",
+      "Press both dumbbells up and slightly inward until your arms are fully extended over your chest, without clanging them together.",
+      "Lower the dumbbells under control until they are level with or slightly below your chest, feeling a stretch across the pecs.",
+      "Press back up to the top and repeat. At the end of the set, lower the dumbbells to your thighs and sit up to set them down safely."
+    ],
+    "formCues": [
+      "Keep your wrists stacked over your elbows during the press",
+      "Lower until you feel a comfortable chest stretch, not pain",
+      "Keep your shoulder blades pinned to the bench"
+    ],
+    "commonMistakes": [
+      "Letting the dumbbells drift too far apart or too far back",
+      "Using too much weight and losing control at the bottom",
+      "Clanging the dumbbells together at the top and breaking tension"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "incline-dumbbell-press",
+    "name": "Incline Dumbbell Press",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (clavicular head)"],
+    "secondaryMuscles": ["Anterior deltoid", "Triceps brachii"],
+    "equipment": "Dumbbell",
+    "difficulty": "Beginner",
+    "animationType": "push-vertical",
+    "instructions": [
+      "Set an adjustable bench to about 30 to 45 degrees and sit with a dumbbell on each thigh.",
+      "Lie back while kicking the dumbbells up to shoulder level, palms facing forward and shoulder blades retracted.",
+      "Press both dumbbells up and slightly together until your arms are fully extended over your upper chest.",
+      "Lower under control until the dumbbells are at chest level and you feel a stretch across the upper pecs.",
+      "Press back to the top and repeat, then return the dumbbells to your thighs safely at the end of the set."
+    ],
+    "formCues": [
+      "Keep the incline moderate to target the upper chest, not the shoulders",
+      "Control the descent for a full stretch at the bottom",
+      "Drive your feet into the floor for stability"
+    ],
+    "commonMistakes": [
+      "Choosing too steep an angle and shifting load to the delts",
+      "Bouncing or rushing the bottom of the rep",
+      "Letting the elbows drop far behind the body and straining the shoulders"
+    ],
+    "sets": "3-4",
+    "reps": "8-12"
+  },
+  {
+    "id": "dumbbell-chest-fly",
+    "name": "Dumbbell Chest Fly",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (sternal head)"],
+    "secondaryMuscles": ["Anterior deltoid"],
+    "equipment": "Dumbbell",
+    "difficulty": "Intermediate",
+    "animationType": "fly",
+    "instructions": [
+      "Lie flat on a bench holding a dumbbell in each hand, pressed up over your chest with palms facing each other.",
+      "Keep a soft, fixed bend in your elbows and retract your shoulder blades.",
+      "Open your arms out to the sides in a wide arc, lowering the dumbbells until you feel a stretch across your chest, with your elbows roughly level with the bench.",
+      "Squeeze your chest to bring the dumbbells back up along the same arc until they meet over your chest.",
+      "Repeat for the prescribed reps, keeping the elbow angle constant throughout."
+    ],
+    "formCues": [
+      "Move only at the shoulder, keeping the elbow bend fixed",
+      "Imagine hugging a large tree on the way up",
+      "Stop the stretch before any shoulder discomfort"
+    ],
+    "commonMistakes": [
+      "Bending and straightening the elbows, turning it into a press",
+      "Going too heavy and overstretching the shoulder joint",
+      "Lowering the dumbbells far below bench level"
+    ],
+    "sets": "3",
+    "reps": "10-15"
+  },
+  {
+    "id": "cable-crossover",
+    "name": "Cable Crossover",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (sternal head)"],
+    "secondaryMuscles": ["Anterior deltoid"],
+    "equipment": "Cable",
+    "difficulty": "Intermediate",
+    "animationType": "fly",
+    "instructions": [
+      "Set both pulleys to or above shoulder height, attach single handles, and grab one in each hand.",
+      "Step forward into a staggered stance with a slight forward lean and a soft bend in your elbows.",
+      "Start with your arms open and out to the sides, feeling a stretch across the chest.",
+      "Bring both handles down and together in front of your body in a wide arc, squeezing your chest as your hands meet.",
+      "Slowly return to the open starting position under control and repeat."
+    ],
+    "formCues": [
+      "Keep a slight constant bend in the elbows throughout",
+      "Lead the motion with your hands meeting at the midline",
+      "Maintain a stable torso lean and a braced core"
+    ],
+    "commonMistakes": [
+      "Turning the movement into a triceps pressdown by straightening the arms",
+      "Using momentum and swinging the torso",
+      "Shrugging the shoulders up toward the ears"
+    ],
+    "sets": "3",
+    "reps": "12-15"
+  },
+  {
+    "id": "push-up",
+    "name": "Push-Up",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (sternal head)"],
+    "secondaryMuscles": ["Anterior deltoid", "Triceps brachii", "Rectus abdominis"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "animationType": "push-horizontal",
+    "instructions": [
+      "Start in a high plank with your hands slightly wider than shoulder width and fingers pointing forward.",
+      "Brace your core and squeeze your glutes so your body forms a straight line from head to heels.",
+      "Bend your elbows to lower your chest toward the floor, keeping your elbows at roughly a 45 degree angle to your torso.",
+      "Lower until your chest is just above the floor, then press through your hands to push back up to the start.",
+      "Fully extend your arms at the top without sagging the hips, and repeat. Drop to your knees if you cannot keep a straight line."
+    ],
+    "formCues": [
+      "Keep a rigid straight line from head to heels",
+      "Tuck your elbows toward a 45 degree angle, not flared to 90",
+      "Keep your neck neutral by looking slightly ahead of your hands"
+    ],
+    "commonMistakes": [
+      "Sagging or piking the hips instead of holding a plank",
+      "Doing partial reps that do not lower the chest near the floor",
+      "Flaring the elbows straight out to the sides"
+    ],
+    "sets": "3-4",
+    "reps": "10-20"
+  },
+  {
+    "id": "chest-dip",
+    "name": "Chest Dip",
+    "muscleGroup": "Chest",
+    "primaryMuscles": ["Pectoralis major (sternal head)"],
+    "secondaryMuscles": ["Anterior deltoid", "Triceps brachii"],
+    "equipment": "Bodyweight",
+    "difficulty": "Advanced",
+    "animationType": "push-vertical",
+    "instructions": [
+      "Grip parallel dip bars and support your bodyweight with your arms locked out at the top.",
+      "Lean your torso forward, bend your knees, and cross your ankles to emphasize the chest.",
+      "Lower yourself under control by bending the elbows, allowing them to flare slightly outward as your chest descends.",
+      "Descend until your upper arms are about parallel to the floor and you feel a stretch across the chest, without going so deep that the shoulders feel strained.",
+      "Press back up by driving through the chest and triceps until your arms are fully extended, and repeat."
+    ],
+    "formCues": [
+      "Maintain a forward torso lean to bias the chest over the triceps",
+      "Keep your shoulders down and away from your ears",
+      "Control the descent rather than dropping fast"
+    ],
+    "commonMistakes": [
+      "Staying too upright, which shifts the work to the triceps",
+      "Descending too deep and overstretching the shoulders",
+      "Using a jerky, bouncing tempo at the bottom"
+    ],
+    "sets": "3",
+    "reps": "8-12"
+  }
+]
